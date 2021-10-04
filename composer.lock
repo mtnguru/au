@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1caffd315e4043c9d8b1db848b625917",
+    "content-hash": "42445f44da5b6ea8fabffba3de52b453",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -221,7 +221,7 @@
             "version": "3.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "e786e3d9707ffd9b0dd330ca135b66344dcef85a"
             },
             "dist": {
@@ -8647,6 +8647,139 @@
             ],
             "support": {
                 "source": "https://git.drupalcode.org/project/rename_admin_paths"
+            }
+        },
+        {
+            "name": "drupal/rocket_chat",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rocket_chat.git",
+                "reference": "8.x-2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rocket_chat-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "ee0b4f8cc566801bdf18be27b3a864905243164d"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/rocket_chat_api": "*",
+                "ext-json": "*",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "drupal/coder": "^8.3",
+                "drupal/group": "*",
+                "drupal/rocket_chat_api": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.5",
+                    "datestamp": "1616672867",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Lawri van Buël",
+                    "homepage": "https://www.drupal.org/u/sysosmaster",
+                    "email": "sysosmaster@2588960.no-reply.drupal.org",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "florisg",
+                    "homepage": "https://www.drupal.org/user/787250"
+                },
+                {
+                    "name": "geekgonecrazy",
+                    "homepage": "https://www.drupal.org/user/3386404"
+                },
+                {
+                    "name": "jelhouss",
+                    "homepage": "https://www.drupal.org/user/3397122"
+                },
+                {
+                    "name": "leefaus",
+                    "homepage": "https://www.drupal.org/user/413789"
+                },
+                {
+                    "name": "sysosmaster",
+                    "homepage": "https://www.drupal.org/user/2588960"
+                }
+            ],
+            "description": "Drupal Rocketchat integration Module, with Livechat and API support.",
+            "homepage": "https://drupal.org/project/rocket_chat",
+            "support": {
+                "source": "https://cgit.drupalcode.org/rocket_chat",
+                "issues": "https://www.drupal.org/project/issues/rocket_chat",
+                "Drupalchat": "rocketchat://drupalchat.me/channel/rocket.chat"
+            }
+        },
+        {
+            "name": "drupal/rocket_chat_api",
+            "version": "2.5.0",
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/rocket_chat": "self.version",
+                "guzzlehttp/guzzle": "^6.2",
+                "php": "^7.2"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.5",
+                    "datestamp": "1616672867",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "Lawri van Buël",
+                    "homepage": "https://www.drupal.org/user/3386388",
+                    "email": "sysosmaster@2588960.no-reply.drupal.org"
+                },
+                {
+                    "name": "florisg",
+                    "homepage": "https://www.drupal.org/user/787250"
+                },
+                {
+                    "name": "geekgonecrazy",
+                    "homepage": "https://www.drupal.org/user/3386404"
+                },
+                {
+                    "name": "jelhouss",
+                    "homepage": "https://www.drupal.org/user/3397122"
+                },
+                {
+                    "name": "leefaus",
+                    "homepage": "https://www.drupal.org/user/413789"
+                },
+                {
+                    "name": "sysosmaster",
+                    "homepage": "https://www.drupal.org/user/2588960"
+                }
+            ],
+            "description": "Drupal Rocketchat API module",
+            "homepage": "https://www.drupal.org/project/rocket_chat",
+            "support": {
+                "source": "https://git.drupalcode.org/project/rocket_chat"
             }
         },
         {
