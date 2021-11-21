@@ -1,19 +1,39 @@
-//@font-face {
-//  font-family: "Martel Sans";
-//  src: url('/themes/custom/sa_neato/fonts/martel.ttf');
-//}
+@font-face {
+  font-family: "Martel Sansical";
+  src: url('/themes/custom/sf/fonts/martel.ttf');
+}
 
 @font-face {
-  font-family: "Trajan Pro";
-  src: url('/themes/custom/sa_neato/fonts/trajanpro.ttf') format('ttf');
+  font-family: "Futurism";
+  src: url('/themes/custom/sf/fonts/Futurism.ttf');
+}
+
+@font-face {
+  font-family: "NeutraText-BoldItalic";
+  src: url('/themes/custom/sf/fonts/NeutraText-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: "NeutraText-Bold";
+  src: url('/themes/custom/sf/fonts/NeutraText-Bold.ttf');
+}
+
+@font-face {
+  font-family: "NeutraText-BookItalic";
+  src: url('/themes/custom/sf/fonts/NeutraText-BookItalic.ttf');
+}
+
+@font-face {
+  font-family: "NeutraText-Book";
+  src: url('/themes/custom/sf/fonts/NeutraText-Book.ttf');
 }
 
 html {
   color: $base-fg-color;
-  font-family: var(--font-family);
-//font-family: 'Garamond', sans-serif;
-//font-family: 'Trajan Pro', sans-serif;
-//font-family: 'Martel Sans', sans-serif;
+//font-family: var(--font-family);
+//font-family: 'Futurism', sans-serif;
+  font-family: 'NeutraText-Book', sans-serif;
+//font-family: 'Martel Sansical', sans-serif;
   font-size: 100%;
   line-height: var(--line-height);
 }

@@ -11,3 +11,11 @@ global-scripts:
   js:
     js/js-src/scripts.js: {}
     js/js-src/menuTop.js: {}
+
+onepage:
+  version: VERSION
+  css:
+    base:
+      css/onepage.css: {}
+  js:
+    js/js-src/onepage.js: {} 

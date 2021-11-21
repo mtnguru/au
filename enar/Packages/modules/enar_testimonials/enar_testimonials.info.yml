@@ -1,0 +1,20 @@
+name: 'Enar Testimonials'
+description: 'Provides testimonials content type and all related information such as view, configuration. '
+type: module
+#core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - block
+  - field
+  - image
+  - inv_views_bxslider
+  - inv_views_grid
+  - inv_block_custom
+  - menu_ui
+  - node
+  - path
+  - system
+  - text
+  - user
+  - views
+version: 9.x-1.0

@@ -1,0 +1,29 @@
+Demo-Shop.zip: demo version with Drupal commerce 2.x => import enar_shop.sql.zip 
+Demo.zip: without install commmerce modules => import enar.sql.zip
+
++ If you don't install Demo and install to existing website copy folder modules, themes from Demo.zip and modules in Packages folder.
+
+This theme is running Drupal 9, so you should run on: PHP 7.4
+
++ If you import demo and run demo and saw that all style was broken
+=> It's caused by permission on "temporary folder" at your server
+=> Fix it by open settings.php (\sites\default) go to line 529
+
+/**
+ * Temporary file path:
+ *
+ * A local file system path where temporary files will be stored. This directory
+ * must be absolute, outside of the Drupal installation directory and not
+ * accessible over the web.
+ *
+ * If this is not set, the default for the operating system will be used.
+ *
+ * @see \Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory()
+ */
+#$settings['file_temp_path'] = '/tmp';
+
+Line 529:
+#$settings['file_temp_path'] = '/tmp';
+uncomment this line and change to your folder path (outside of the Drupal installation directory and not
+ * accessible over the web) in your server which have writeable permsion
+Clear cache

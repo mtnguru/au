@@ -1,0 +1,22 @@
+name: 'Enar Portfolio'
+description: 'Provide Portoflio content type & related view for showing your portfolio with multiple style. '
+type: module
+#core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - block
+  - carousel_formatter
+  - inv_views_bxslider
+  - inv_views_grid
+  - field
+  - image
+  - inv_block_custom
+  - menu_ui
+  - node
+  - path
+  - system
+  - taxonomy
+  - text
+  - user
+  - views
+version: 9.x-1.0
