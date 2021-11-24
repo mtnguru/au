@@ -89,31 +89,31 @@ $page-padding-desktop: 30px;
 $page-padding-widescreen: 50px;
 
 %layout-padding-mobile {
-  @include media($bp320only) {
+  @include media($bp-mobile-only) {
     padding-left: $page-padding-mobile;
     padding-right: $page-padding-mobile;
-  } // $bp320only
+  } // $bp-mobile-only
 } // %layout-padding-mobile
 
 %layout-padding-tablet {
-  @include media($bp580only) {
+  @include media($bp-tablet) {
     padding-left: $page-padding-tablet;
     padding-right: $page-padding-tablet;
-  } // $bp580only
+  } // $bp-tablet-only
 } // %layout-padding-tablet
 
 %layout-padding-desktop {
-  @include media($bp960only) {
+  @include media($bp-desktop-only) {
     padding-left: $page-padding-desktop;
     padding-right: $page-padding-desktop;
-  } // $bp960only
+  } // $bp-desktop-only
 } // %layout-padding-desktop
 
 %layout-padding-widescreen {
-  @include media($bp1280) {
+  @include media($bp-widescreen) {
     padding-left: $page-padding-widescreen;
     padding-right: $page-padding-widescreen;
-  } // $b1280
+  } // $bp-widescreen
 } // %layout-padding-widescreen
 
 %layout-padding {

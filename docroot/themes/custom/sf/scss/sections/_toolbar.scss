@@ -1,11 +1,11 @@
 body.toolbar-tray-open {
-  @include media(max-width $bp320max) {
+  @include media(max-width $bp-mobile-max) {
     margin-left: 0 !important;
     #toolbar-administration {
       display: none;
     }
   }
-  @include media(max-width $bp580max) {
+  @include media(max-width $bp-tablet-max) {
     margin-left: 0 !important;
     #toolbar-administration {
       display: none;

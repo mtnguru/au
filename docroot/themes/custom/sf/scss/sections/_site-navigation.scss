@@ -72,11 +72,11 @@
       margin: 0 auto;
       vertical-align: top;
 
-      @include media(max-width $bp580max) {
+      @include media(max-width $bp-tablet-max) {
         width: 100%;
         text-align: right;
       }
-      @include media($bp960) {
+      @include media($bp-desktop) {
         right: 50px;
         text-align: left;
       }
@@ -86,7 +86,7 @@
         top: 0px;
         left: 8px;
 
-        @include media($bp960) {
+        @include media($bp-desktop) {
           right: $page-padding-desktop;
           left: auto;
           top: -65px;
@@ -146,7 +146,7 @@
             .account-title {
               color: $color-gold;
             }
-            @include media($bp960) {
+            @include media($bp-desktop) {
               left: auto;
               right: -10px;
             }
@@ -157,7 +157,7 @@
               bottom: auto;
               top: -20px;
               text-align: left;
-              @include media ($bp960) {
+              @include media ($bp-desktop) {
                 text-align: left;
                 right: -10px;
                 left: auto;
@@ -211,7 +211,7 @@
       vertical-align: middle;
     }
 
-    @include media ($bp960) {
+    @include media ($bp-desktop) {
       display: none;
     }
 
@@ -236,12 +236,12 @@
     margin: 0 auto;
     list-style-type: none;
 
-    @include media(max-width $bp580max) {
+    @include media(max-width $bp-tablet-max) {
       background: linear-gradient(270deg, $color-dark-blue, $color-blue);
       margin-top: -50px;
     }
 
-    @include media($bp960) {
+    @include media($bp-desktop) {
       > li {
         > ul {
           margin-left: -30px;
@@ -276,7 +276,7 @@
       display: block;
     }
 
-    @include media ($bp960) {
+    @include media ($bp-desktop) {
       display: flex;
       float: right;
       margin: 0 30px 0 0;
@@ -304,7 +304,7 @@
 //    height: 40px;
 //    display: block;
 
-      @include media($bp960) {
+      @include media($bp-desktop) {
         display: inline-block;
         &.more {
           margin-top: 13px;
@@ -328,7 +328,7 @@
       }
     }
 
-    @include media($bp960) {
+    @include media($bp-desktop) {
       > li.nav-link {
         text-align: left;
         > span,
@@ -345,7 +345,7 @@
       }
     }
 
-    @include media($bp1280) {
+    @include media($bp-widescreen) {
       > li {
         span,
         > a {
@@ -370,7 +370,7 @@
       display: block;
     }
 
-    @include media($bp960) {
+    @include media($bp-desktop) {
       position: relative;
     }
 
@@ -402,33 +402,33 @@
       text-decoration: none;
     }
 
-    @include media(max-width $bp580max) {
+    @include media(max-width $bp-tablet-max) {
       background-color: rgba(0,0,0,.4);
       margin: 0 15px;
     }
 
-    @include media($bp960) {
+    @include media($bp-desktop) {
       background-color: $navigation-background;
       position: absolute;
       top: 2.5em;
     }
 
     .submenu.fly-out-right {
-      @include media($bp960) {
+      @include media($bp-desktop) {
         left: $navigation-submenu-width - .25em;
         top: 0;
       }
     }
 
     .submenu.fly-out-left {
-      @include media($bp960) {
+      @include media($bp-desktop) {
         left: -$navigation-submenu-width + .25em;
         top: 0;
       }
     }
 
     .submenu {
-      @include media($bp960) {
+      @include media($bp-desktop) {
         left: $navigation-submenu-width - .25em;
         top: 0;
       }
@@ -438,7 +438,7 @@
       line-height: 1.5;
       padding: 0;
 
-      @include media($bp960) {
+      @include media($bp-desktop) {
 
         &:first-child > a {
           border-top-left-radius: $base-border-radius;
@@ -457,7 +457,7 @@
         line-height: 1.4;
         padding: 3px 15px;
 
-//      @include media($bp960) {
+//      @include media($bp-desktop) {
 //        width: $navigation-submenu-width;
 //      }
       }
@@ -472,7 +472,7 @@
     display: block;
     height: $navigation-height;
 
-    @include media($bp960) {
+    @include media($bp-desktop) {
       background: transparent;
       clear: none;
       float: right;
@@ -506,7 +506,7 @@
         padding: 0.5em 0.8em;
         width: 100%;
 
-        @include media($bp960) {
+        @include media($bp-desktop) {
           width: 100%;
         }
       }
@@ -530,7 +530,7 @@
       }
     }
 
-    @include media($bp960) {
+    @include media($bp-desktop) {
       display: inline-block;
       position: relative;
       width: 225px;

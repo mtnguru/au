@@ -12,10 +12,10 @@ global-scripts:
     js/js-src/scripts.js: {}
     js/js-src/menuTop.js: {}
 
-onepage:
+bands:
   version: VERSION
-  css:
-    base:
-      css/onepage.css: {}
+# css:
+#   base:
+#     css/bands.css: {}
   js:
-    js/js-src/onepage.js: {} 
+    js/js-src/bands.js: {} 

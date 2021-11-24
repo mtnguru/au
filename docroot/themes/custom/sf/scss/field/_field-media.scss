@@ -58,31 +58,31 @@ article.media {
 
   &.az-view-mode-tiny,
   &.az-view-mode-tiny-w-desc {
-    @include media($bp320only)  { width: 35%; } // $bp320
-    @include media($bp580)  { width: 30%; } // $bp580
-    @include media($bp960)  { width: 25%; } // $bp960
-    @include media($bp1280) { width: 20%; } // $bp1280
-    @include media($bp1920) { width: 20%; } // $bp1920
+    @include media($bp-mobile-only)  { width: 35%; } // $bp-mobile
+    @include media($bp-tablet)  { width: 30%; } // $bp-tablet
+    @include media($bp-desktop)  { width: 25%; } // $bp-desktop
+    @include media($bp-widescreen) { width: 20%; } // $bp-widescreen
+    @include media($bp-superwide) { width: 20%; } // $bp-superwide
   }
 
   &.az-view-mode-small,
   &.az-view-mode-small-no-caption,
   &.az-view-mode-small-w-desc {
-    @include media($bp320only)  { width: 50%; } // $bp320
-    @include media($bp580)  { width: 45%; } // $bp580
-    @include media($bp960)  { width: 40%  } // $bp960
-    @include media($bp1280) { width: 35%; } // $bp1280
-    @include media($bp1920) { width: 30%; } // $bp1920
+    @include media($bp-mobile-only)  { width: 50%; } // $bp-mobile
+    @include media($bp-tablet)  { width: 45%; } // $bp-tablet
+    @include media($bp-desktop)  { width: 40%  } // $bp-desktop
+    @include media($bp-widescreen) { width: 35%; } // $bp-widescreen
+    @include media($bp-superwide) { width: 30%; } // $bp-superwide
   }
 
   &.az-view-mode-medium,
   &.az-view-mode-medium-no-caption,
   &.az-view-mode-medium-w-desc {
-    @include media($bp320only)  { width: 100%; margin-left: auto; margin-right: auto; float: none;} // $bp320
-    @include media($bp580only)  { width: 100%; margin-left: auto; margin-right: auto; float: none;} // $bp580
-    @include media($bp960)  { width: 50%; } // $bp960
-    @include media($bp1280) { width: 40%; } // $bp1280
-    @include media($bp1920) { width: 30%; } // $bp1920
+    @include media($bp-mobile-only)  { width: 100%; margin-left: auto; margin-right: auto; float: none;} // $bp-mobile-
+    @include media($bp-tablet-only)  { width: 100%; margin-left: auto; margin-right: auto; float: none;} // $bp-tablet-
+    @include media($bp-desktop)  { width: 50%; } // $bp-desktop
+    @include media($bp-widescreen) { width: 40%; } // $bp-widescreen
+    @include media($bp-superwide) { width: 30%; } // $bp-superwide
   }
 
   &.az-view-mode-large,
@@ -91,10 +91,10 @@ article.media {
   &.az-view-mode-x-large,
   &.az-view-mode-x-large-no-caption,
   &.az-view-mode-x-large-w-desc {
-    @include media($bp320only)  { width: 100%; margin-left: auto; margin-right: auto; float: none;} // $bp320
-    @include media($bp580only)  { width: 100%; margin-left: auto; margin-right: auto; float: none;} // $bp580
-    @include media($bp960only)  { width: 100%; margin-left: auto; margin-right: auto; float: none;} // $bp960
-    @include media($bp1280only) { width: 100%; } // $bp1280
-    @include media($bp1920) { width: 90%; } // $bp1920
+    @include media($bp-mobile-only)  { width: 100%; margin-left: auto; margin-right: auto; float: none;} // $bp-mobile-
+    @include media($bp-tablet-only)  { width: 100%; margin-left: auto; margin-right: auto; float: none;} // $bp-tablet-
+    @include media($bp-desktop-only)  { width: 100%; margin-left: auto; margin-right: auto; float: none;} // $bp-desktop-
+    @include media($bp-widescreen-only) { width: 100%; } // $bp-widescreen-
+    @include media($bp-superwide) { width: 90%; } // $bp-superwide
   }
 }

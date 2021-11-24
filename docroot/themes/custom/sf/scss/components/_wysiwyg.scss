@@ -167,7 +167,7 @@ body.cke_ltr {
     font-style: italic;
     text-align: center;
     color: $color-title;
-    @include media (max-width $bp580max) {
+    @include media (max-width $bp-tablet-max) {
       font-size: 110%;
       text-align: left;
     }
@@ -178,7 +178,7 @@ body.cke_ltr {
     font-weight: normal;
     font-style: italic;
     text-align: center;
-    @include media (max-width $bp580max) {
+    @include media (max-width $bp-tablet-max) {
       font-size: 110%;
       text-align: left;
     }
@@ -223,47 +223,47 @@ article.embedded-entity {
   }
 
   &.az-view-mode-media-tiny {
-    @include media($bp320only)  { width: 33%; }
-    @include media($bp580only)  { width: 30; }
-    @include media($bp960only)  { width: 25%; }
-    @include media($bp1280only) { width: 20%; }
-    @include media($bp1920)     { width: 20%; }
+    @include media($bp-mobile-only)  { width: 33%; }
+    @include media($bp-tablet-only)  { width: 30; }
+    @include media($bp-desktop-only)  { width: 25%; }
+    @include media($bp-widescreen-only) { width: 20%; }
+    @include media($bp-superwide)     { width: 20%; }
   }
 
   &.az-view-mode-media-small,
   &.az-view-mode-media-small-w-desc {
-    @include media($bp320only)  { width: 40%; }
-    @include media($bp580only)  { width: 35%; }
-    @include media($bp960only)  { width: 30%; }
-    @include media($bp1280only) { width: 25%; }
-    @include media($bp1920)     { width: 20%; }
+    @include media($bp-mobile-only)  { width: 40%; }
+    @include media($bp-tablet-only)  { width: 35%; }
+    @include media($bp-desktop-only)  { width: 30%; }
+    @include media($bp-widescreen-only) { width: 25%; }
+    @include media($bp-superwide)     { width: 20%; }
   }
 
   &.az-view-mode-media-medium,
   &.az-view-mode-media-medium-w-desc {
-    @include media($bp320only)  { width: 90%; margin: 0 auto !important; float: none; }
-    @include media($bp580only)  { width: 70%; margin: 0 auto !important; float: none; }
-    @include media($bp960only)  { width: 50%; }
-    @include media($bp1280only) { width: 40%; }
-    @include media($bp1920)     { width: 30%; }
+    @include media($bp-mobile-only)  { width: 90%; margin: 0 auto !important; float: none; }
+    @include media($bp-tablet-only)  { width: 70%; margin: 0 auto !important; float: none; }
+    @include media($bp-desktop-only)  { width: 50%; }
+    @include media($bp-widescreen-only) { width: 40%; }
+    @include media($bp-superwide)     { width: 30%; }
   }
 
   &.az-view-mode-media-med-large,
   &.az-view-mode-media-med-large-w-desc {
-    @include media($bp320only)  { width: 90%; margin: 0 auto !important; float: none; }
-    @include media($bp580only)  { width: 80%; margin: 0 auto !important; float: none; }
-    @include media($bp960only)  { width: 70%; }
-    @include media($bp1280only) { width: 60%; }
-    @include media($bp1920)     { width: 50%; }
+    @include media($bp-mobile-only)  { width: 90%; margin: 0 auto !important; float: none; }
+    @include media($bp-tablet-only)  { width: 80%; margin: 0 auto !important; float: none; }
+    @include media($bp-desktop-only)  { width: 70%; }
+    @include media($bp-widescreen-only) { width: 60%; }
+    @include media($bp-superwide)     { width: 50%; }
   }
 
   &.az-view-mode-media-large,
   &.az-view-mode-media-large-w-desc {
-    @include media($bp320only)  { width: 100%; margin: 0 auto !important; float: none; }
-    @include media($bp580only)  { width: 100%; margin: 0 auto !important; float: none; }
-    @include media($bp960only)  { width: 90%;  margin: 0 auto !important; float: none; }
-    @include media($bp1280only) { width: 80%;  margin: 0 auto !important; float: none; }
-    @include media($bp1920)     { width: 70%;  margin: 0 auto !important; float: none; }
+    @include media($bp-mobile-only)  { width: 100%; margin: 0 auto !important; float: none; }
+    @include media($bp-tablet-only)  { width: 100%; margin: 0 auto !important; float: none; }
+    @include media($bp-desktop-only)  { width: 90%;  margin: 0 auto !important; float: none; }
+    @include media($bp-widescreen-only) { width: 80%;  margin: 0 auto !important; float: none; }
+    @include media($bp-superwide)     { width: 70%;  margin: 0 auto !important; float: none; }
   }
 
   img {

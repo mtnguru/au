@@ -7,7 +7,7 @@
       width: 72px;
       height: 72px;
     }
-    @include media($bp960) {
+    @include media($bp-desktop) {
       padding: 20px;
       margin-left: 30px;
       img {
@@ -34,7 +34,7 @@
       margin-top: 24px;
       margin-left: -40px;
       font-size: 80%;
-      @include media(max-width $bp580max) {
+      @include media(max-width $bp-tablet-max) {
         font-size: 60%;
       }
       i {
@@ -42,7 +42,7 @@
       }
     }
 
-    @include media($bp960) {
+    @include media($bp-desktop) {
       margin-left: 10px;
       margin-top: 67px;
       img {

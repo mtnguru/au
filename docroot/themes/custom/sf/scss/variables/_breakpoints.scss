@@ -1,32 +1,33 @@
 
-$min-width-mobile: 320;
-$min-width-tablet: 580;
-$min-width-tablet-toolbar: 610;
-$min-width-desktop: 960;
-$min-width-widescreen: 1280;
-$min-width-superwide: 1920;
+$bp-mobile-px: 380;
+$bp-tablet-px: 580;
+$bp-tabletToolbar-px: 610;
+$bp-desktop-px: 960;
+$bp-widescreen-px: 1280;
+$bp-superwide-px: 1920;
 
-$bp580: rem($min-width-tablet);
-$bp610: rem($min-width-tablet-toolbar);
-$bp960: rem($min-width-desktop);
-$bp1280: rem($min-width-widescreen);
-$bp1920: rem($min-width-superwide);
+$bp-mobile: rem($bp-mobile-px);
+$bp-tablet: rem($bp-tablet-px);
+$bp-tabletToolbar: rem($bp-tabletToolbar-px);
+$bp-desktop: rem($bp-desktop-px);
+$bp-widescreen: rem($bp-widescreen-px);
+$bp-superwide: rem($bp-superwide-px);
 
-$bp320max: rem(($min-width-tablet - 1));
-$bp320max-toolbar: rem(($min-width-tablet-toolbar - 1));
-$bp580max: rem(($min-width-desktop - 1));
-$bp960max: rem(($min-width-widescreen - 1));
-$bp1280max: rem(($min-width-superwide - 1));
+$bp-mobile-max: rem(($bp-tablet-px - 1));
+//$bp-mobile-max-toolbar: rem(($bp-tablet-toolbar - 1));
+$bp-tablet-max: rem(($bp-desktop-px - 1));
+$bp-desktop-max: rem(($bp-widescreen-px - 1));
+$bp-widescreen-max: rem(($bp-superwide-px - 1));
 
-$bp320only: max-width $bp320max;
-$bp320only-toolbar: max-width $bp320max-toolbar;
-$bp580only: min-width $bp580 max-width $bp580max;
-$bp960only: min-width $bp960 max-width $bp960max;
-$bp1280only: min-width $bp1280 max-width $bp1280max;
+$bp-mobile-only: max-width $bp-mobile-max;
+//$bp-mobile-only-toolbar: max-width $bp-mobile-max-toolbar;
+$bp-tablet-only: min-width $bp-tablet max-width $bp-tablet-max;
+$bp-desktop-only: min-width $bp-desktop max-width $bp-desktop-max;
+$bp-widescreen-only: min-width $bp-widescreen max-width $bp-widescreen-max;
 
-$bp580-610: min-width $bp580 max-width $bp320max-toolbar;
-$bp610-960: min-width $bp610 max-width $bp580max;
-$bp580-1280: min-width $bp580 max-width $bp960max;
-$bp960-1280: min-width $bp960 max-width $bp1280max;
+//$bp-tablet-tabletToolbar: min-width $bp580 max-width $bp-mobile-max-toolbar;
+//$bp-tablet-toolbar-desktop-: min-width $bp-tabletToolbar max-width $bp-tablet-max;
+//$bp-tablet-widescreen: min-width $bp-tablet max-width $bp-desktop-max;
+//$bp-desktop-widescreen: min-width $bp-desktop max-width $bp-widescreen-max;
 
 

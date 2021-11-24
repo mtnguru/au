@@ -31,7 +31,7 @@
         margin-bottom: 0.5em;
         font-weight: 200;
 
-        @include media($bp1280) {
+        @include media($bp-widescreen) {
           font-size: 4rem;
         }
 
@@ -44,7 +44,7 @@
         font-weight: 200;
         line-height: 1.4em;
 
-        @include media($bp1280) {
+        @include media($bp-widescreen) {
           font-size: 1.4em;
         }
       }

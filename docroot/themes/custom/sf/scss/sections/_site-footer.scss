@@ -57,7 +57,7 @@
       }
     }
 
-    @include media($bp960) {
+    @include media($bp-desktop) {
       .left-col {
         position: relative;
         float: left;
@@ -106,7 +106,7 @@
     }
 
     display: none;
-    @include media($bp960) {
+    @include media($bp-desktop) {
       display: block;
     }
   }

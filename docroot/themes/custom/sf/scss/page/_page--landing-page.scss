@@ -6,11 +6,11 @@ body.page-node-type-landing-page {
     height: 40vh;
     background-repeat: no-repeat;
     background-position: center;
-    @include media($bp960) {
+    @include media($bp-desktop) {
       background-attachment: fixed;
       height: 45vh;
     }
-    @include media($bp1280) {
+    @include media($bp-widescreen) {
       background-attachment: fixed;
       height: 55vh;
     }
@@ -21,7 +21,7 @@ body.page-node-type-landing-page {
       position: absolute;
       top: 20px;
       right: 20px;
-      @include media($bp960) {
+      @include media($bp-desktop) {
         right: 50px;
       }
       img {
@@ -31,7 +31,7 @@ body.page-node-type-landing-page {
         text-shadow: 1px 1px 3px $color-dark-gray;
         color: white;
         font-size: 130%;
-        @include media($bp960) {
+        @include media($bp-desktop) {
           font-size: 160%;
         }
       }
@@ -45,7 +45,7 @@ body.page-node-type-landing-page {
 
   form.contact-message-sitewide-form {
     width: 520px;
-    @include media (max-width $bp320max) {
+    @include media (max-width $bp-mobile-max) {
       width: 320px;
     }
 

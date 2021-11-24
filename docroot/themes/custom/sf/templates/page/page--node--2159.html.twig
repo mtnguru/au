@@ -1,0 +1,140 @@
+{{ attach_library('sf/bands') }}
+<div id="bands" role="document" class="page">
+  <div id="intro" class="header-container fs">
+    <div class="bcg"></div>
+    <header class="wrapper">
+      <img src="/themes/custom/sf/img/aureon.png" class="aureon" />
+      <img src="/themes/custom/sf/img/slogan1.png" class="slogan" />
+    </header>
+    <!--span class="scroll-hint">Scroll Down</span-->
+  </div>
+
+  <nav id="scrollnav">
+
+    <ul class="dude">
+      <li><a href="#intro"><span class="nav-dot"></span><span class="nav-label">Intro</span></a></li>
+      <li><a href="#slide01"><span class="nav-dot"></span><span class="nav-label">Images</span></a></li>
+      <li><a href="#slide02"><span class="nav-dot"></span><span class="nav-label">Position and Timing</span></a></li>
+      <!--li><a href="#slide03"><span class="nav-dot"></span><span class="nav-label">Download</span></a></li-->
+    </ul>
+  </nav>
+
+  <div class="main-container">
+
+    <article id="cb01" class="content-block">
+      <div class="wrapper">
+        <header class="slideInUp">
+          <h1>OPPORTUNITY</h1>
+        </header>
+        <section class="slideInUp slideInUp3">
+          <p>Managing radioactive waste is a $500 billion industry in the US.  The worst of that lasts 10,000 to over a billion years.</p>
+        </section>
+      </div> <!-- .wrapper -->
+    </article>
+
+    <article id="slide01" class="slide fs">
+      <div class="bcg"></div>
+      <div class="wrapper">
+        <header class="slideInUp">
+          <h1>WHAT IF</h1>
+        </header>
+        <section>
+          <p>What would be the value of a technology that could safely neutralize radioactive waste, leaving clean eletricity and atomic elements like rare earth minerals as by-products?</p>
+        </section>
+      </div> <!-- .wrapper -->
+    </article>
+
+    <article id="cb02" class="content-block">
+      <div class="wrapper">
+        <header class="slideInUp">
+          <h1>HERE NOW</h1>
+        </header>
+        <section>
+          <p class="slideInUp slideInUp2">After seven years of research and experimentation with medium-temperature nuclear plasma reactors, that capability is here now and Aureon Energy is bringing it to market.</p>
+        </section>
+      </div> <!-- .wrapper -->
+    </article>
+
+    <article id="slide02" class="slide fs">
+      <div class="bcg"></div>
+      <div class="wrapper">
+        <header class="slideInUp">
+          <h1>PARTICIPATE</h1>
+        </header>
+        <section>
+          <p class="slideInUp slideInUp2">We are extending an invitation to interested and aligned investors to participate in our Series A financing.  To find out more, please register <a href=/contactus">here</a>.</p>
+        </section>
+      </div> <!-- .wrapper -->
+    </article>
+
+    <article id="cb03" class="content-block">
+      <div class="wrapper">
+        <header class="slideInUp">
+          <h1>ASK</h1>
+        </header>
+        <section>
+          <p class="slideInUp slideInUp2">You don't ask, you don't get. Always end with CALL TO ACTION.</p>
+        </section>
+      </div> <!-- .wrapper -->
+    </article>
+
+    <!--footer id="site-footer" role="contentinfo">
+      <section class="footer-top">
+
+        <div class="left-col">
+          <a class="contact" href="/contact">Contact Us</a>
+        </div>
+
+        <div class="right-col">
+          {% if logged_in %}
+            <a class="login" href="/user/logout">Logout</a>
+          {% else %}
+            <a class="login" href="/user/login">Login</a>
+          {% endif %}
+        </div>
+
+        <div class="middle-col">
+          <div class="company">
+            <div id="site-logo"><a href="/home"><img alt="" src="/sites/default/files/assets/aureon_logo.png" /> </a></div>
+
+            <div id="safire-project">
+              <img class="banner" src="/sites/default/files/assets/company-banner.png"></img>
+              <p class="copyright"><i class="far fa-copyright"></i>2020 AUREON ENERGY LTD. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </footer-->
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function () {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
+
