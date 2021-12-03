@@ -4,6 +4,7 @@
   position: relative;
   background: black;
   $gold: #c0b892;
+  $dark-gold: #644818;
 
   .background {
     position: fixed;
@@ -25,11 +26,10 @@
   .wrapper {
     padding: 3rem;
     position: relative;
-//  max-width: 1280px;
-    max-width: 1920px;
+    max-width: 1280px;
+//  max-width: 1920px;
     margin: 0 auto;
 //  border: $gold solid 1px;
-//  background: no-repeat center center;
 //  background-image: url("../img/stars1_bg.png");
 //  background-image: url("../img/stars4_bg.png");
 //  background-size: cover;
@@ -90,27 +90,36 @@
     margin: 6rem auto;
     height: 376px;
     width: 100%;
-
+    @include clearfix;
     background-size: cover;
-    //  background: no-repeat center center;
+    background-position: left center;
+    background-repeat: no-repeat;
 
     @media only screen and (max-width: $bp_tablet) {
       width: 100%;
+      margin: 1rem auto;
     }
-    @include clearfix;
+
     .image {
       width: 40%;
       img {
         display: block;
       }
     }
-    h2 {
-      font-size: 1.6rem;
-      color: $gold;
-    }
+
     .text {
       font-size: 125%;
-      text-shadow: 1px 1px 10px black;
+      color: $gold;
+
+      h2 {
+        color: inherit;
+        font-size: 1.6rem;
+      }
+
+      p {
+        margin: 10px 0;
+        line-height: 1.3;
+      }
     }
 
     &.section1 {
@@ -119,6 +128,10 @@
       .text {
         padding: 5.5rem 2rem 0 5rem;
         width: 55%;
+        @media only screen and (max-width: $bp_tablet) {
+          width: 90%;
+          margin: 0 auto;
+        }
       }
     }
 
@@ -129,15 +142,28 @@
         float: right;
         padding: 4rem 2rem;
         width: 45%;
+        @media only screen and (max-width: $bp_tablet) {
+          width: 90%;
+          margin: 0 auto;
+          float: none;
+        }
       }
     }
 
     &.section3 {
       height: 450px;
       background-image: url("/themes/custom/sf/img/section3.png");
+      @media only screen and (max-width: $bp_tablet) {
+        background-position: right center;
+      }
       .text {
         padding: 5.5rem 2rem 0 5rem;
         width: 55%;
+        @media only screen and (max-width: $bp_tablet) {
+          width: 90%;
+          padding: 4rem 2rem;
+          margin: 0 auto;
+        }
       }
     }
 
@@ -148,14 +174,15 @@
         float: right;
         padding: 4rem 2rem;
         width: 45%;
+        @media only screen and (max-width: $bp_tablet) {
+          color: $dark-gold;
+          width: 90%;
+          margin: 0 auto;
+          float: none;
+        }
       }
     }
 
-    p {
-      color: $gold;
-      margin: 10px 0;
-      line-height: 1.3;
-    }
   }
 
   .videos {
@@ -166,6 +193,9 @@
     .grid {
       width: 84%;
       margin: 0 auto;
+      @media only screen and (max-width: $bp_tablet) {
+        width: 100%;
+      }
     }
 
     .imagine {
@@ -212,7 +242,7 @@
         color: $gold;
         padding: 1rem;
         font-size: 132%;
-        text-shadow: 0px 0px 8px black;
+        text-shadow: 0px 0px 2px black;
       }
     }
   }
@@ -245,7 +275,8 @@
     }
 
     .slogan {
-      font-size: 1.5vw;
+      font-size: 1.55vw;
+      letter-spacing:.3vw;
       color: $gold;
       margin: 0rem auto;
     }
