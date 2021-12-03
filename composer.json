@@ -13,7 +13,7 @@
         "ckeditor/link": "*",
         "codemirror/codemirror": "*",
         "cweagans/composer-patches": "^1.6.0",
-        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "drupal-composer/drupal-scaffold": "^2.6",
         "drupal/address": "^1.7",
         "drupal/admin_toolbar": "^3.0",
         "drupal/adminimal_theme": "^1.5",
