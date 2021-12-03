@@ -1,0 +1,15 @@
+.para1{font-size: 0; text-align:left; padding-bottom:11px; margin-top:0px; padding-top:0px;}
+.Style2{font-family:  'Helvetica' ,sans-serif ;
+ font-size: 15px; 
+ color: #A69C7E;
+ letter-spacing: 0.28em; 
+ word-wrap: break-word;}
+.Style3{font-family:  'Futura-Medium', 'Futura' ,'Arial' ,sans-serif ;
+ font-size: 144px; 
+ font-weight:500; 
+ color: #BEB590;
+ letter-spacing: 0.18em; 
+ word-wrap: break-word;}
+a.outerlink{text-decoration:none}
+.animhidden{opacity: 0}
+.animvisible{opacity: 1}
