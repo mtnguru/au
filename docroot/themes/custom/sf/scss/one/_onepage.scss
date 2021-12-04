@@ -5,6 +5,7 @@
   background: black;
   $gold: #c0b892;
   $dark-gold: #644818;
+  $light-gold: #e0d982;
 
   .background {
     position: fixed;
@@ -33,6 +34,9 @@
 //  background-image: url("../img/stars1_bg.png");
 //  background-image: url("../img/stars4_bg.png");
 //  background-size: cover;
+    @media only screen and (max-width: $bp_tablet_max) {
+      padding: 3rem 1.5rem;
+    }
   }
 
   #page {
@@ -47,6 +51,9 @@
   header {
     z-index: 1;
     height: 100vh;
+    @media only screen and (max-width: $bp_tablet_max) {
+      height: 50vh;
+    }
 
     .container {
       float: right;
@@ -67,19 +74,14 @@
       }
     }
 
-    .slogan {
-      color: $gold;
-      letter-spacing: .3em;
-      margin: 0 auto;
-      margin-top: 1rem;
-    }
-
     img {
       display: block;
       margin: 0 auto;
-      &.slogan {
-        width: 92%;
-      }
+    }
+
+    .slogan {
+      margin: 0 auto;
+      margin-top: 1rem;
     }
   }
 
@@ -95,15 +97,18 @@
     background-position: left center;
     background-repeat: no-repeat;
 
-    @media only screen and (max-width: $bp_tablet) {
+    @media only screen and (max-width: $bp_tablet_max) {
       width: 100%;
-      margin: 1rem auto;
+      margin: 3rem auto;
     }
 
     .image {
       width: 40%;
       img {
         display: block;
+        @media only screen and (max-width: $bp_tablet_max) {
+          filter: brightness(50%);
+        }
       }
     }
 
@@ -125,12 +130,21 @@
     &.section1 {
       height: 376px;
       background-image: url("/themes/custom/sf/img/section1.png");
+
       .text {
+        color: $light-gold;
         padding: 5.5rem 2rem 0 5rem;
         width: 55%;
-        @media only screen and (max-width: $bp_tablet) {
+      }
+
+      @media only screen and (max-width: $bp_tablet_max) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+            url("/themes/custom/sf/img/section1.png");
+        background-position: right center;
+        .text {
+          padding: 2em 1em 0 1em;
           width: 90%;
-          margin: 0 auto;
+          margin: 0 auto 5em auto;
         }
       }
     }
@@ -139,13 +153,27 @@
       height: 350px;
       background-image: url("/themes/custom/sf/img/section2.png");
       .text {
+        color: $light-gold;
         float: right;
         padding: 4rem 2rem;
         width: 45%;
-        @media only screen and (max-width: $bp_tablet) {
+        .note {
+          position: absolute;
+          bottom: 1.5rem;
+          font-size: 80%;
+        }
+      }
+      @media only screen and (max-width: $bp_tablet_max) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("/themes/custom/sf/img/section2.png");
+        .text {
+          padding: 2em 1em 0 1em;
           width: 90%;
-          margin: 0 auto;
+          margin: 0 auto 5em auto;
           float: none;
+          .note {
+            left: 2rem;
+          }
         }
       }
     }
@@ -153,16 +181,19 @@
     &.section3 {
       height: 450px;
       background-image: url("/themes/custom/sf/img/section3.png");
-      @media only screen and (max-width: $bp_tablet) {
-        background-position: right center;
-      }
       .text {
+        color: $light-gold;
         padding: 5.5rem 2rem 0 5rem;
         width: 55%;
-        @media only screen and (max-width: $bp_tablet) {
+      }
+      @media only screen and (max-width: $bp_tablet_max) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+          url("/themes/custom/sf/img/section3.png");
+        background-position: right center;
+        .text {
+          padding: 2em 1em 0 1em;
           width: 90%;
-          padding: 4rem 2rem;
-          margin: 0 auto;
+          margin: 0 auto 5em auto;
         }
       }
     }
@@ -174,11 +205,20 @@
         float: right;
         padding: 4rem 2rem;
         width: 45%;
-        @media only screen and (max-width: $bp_tablet) {
+        .note {
+          position: absolute;
+          bottom: 1.5rem;
+          font-size: 80%;
+        }
+        @media only screen and (max-width: $bp_tablet_max) {
+          padding: 2em 1em 0 1em;
           color: $dark-gold;
           width: 90%;
-          margin: 0 auto;
+          margin: 0 auto 5em auto;
           float: none;
+          .note {
+            left: 2rem;
+          }
         }
       }
     }
@@ -187,32 +227,38 @@
 
   .videos {
     text-align: center;
-    margin: 0 auto 7rem;
+    margin: 0 auto 5rem;
     padding: 0;
+    @media only screen and (max-width: $bp_tablet_max) {
+      margin: 0 auto 3rem;
+    }
 
     .grid {
       width: 84%;
       margin: 0 auto;
-      @media only screen and (max-width: $bp_tablet) {
+      @media only screen and (max-width: $bp_tablet_max) {
         width: 100%;
       }
     }
 
     .imagine {
-      font-size: 16vw;
+      font-size: 1200%;
       color: $gold;
       margin: 0 auto;
-      padding: 8rem 0 3rem;
+      padding: 5rem 0 3rem;
+      @media only screen and (max-width: $bp_tablet_max) {
+        font-size: 700%;
+        padding: 5rem 0 2rem;
+      }
+      @media only screen and (max-width: $bp_mobile_max) {
+        font-size: 400%;
+        padding: 2rem 0 1rem;
+      }
     }
 
     .video {
       margin-bottom: 2rem;
-//    background-color: #201a20;
-      @media only screen and (max-width: $bp_desktop) {
-//      width: 50%;
-//      padding: 1rem 0;
-      }
-      @media only screen and (max-width: $bp_tablet) {
+      @media only screen and (max-width: $bp_tablet_max) {
 //      width: 100%;
       }
 
@@ -239,7 +285,7 @@
 
       .description {
         text-transform: uppercase;
-        color: $gold;
+        color: $light-gold;
         padding: 1rem;
         font-size: 132%;
         text-shadow: 0px 0px 2px black;
@@ -251,13 +297,18 @@
     position: relative;
     height: 230px;
     text-align: center;
+    @media only screen and (max-width: $bp_tablet_max) {
+      height: 180px;
+    }
 
     .links {
       p {
         margin: 3px 0;
         a {
+          font-size: 115%;
           color: cyan;
           text-decoration: none;
+          text-shadow: 0px 0px 2px black;
           &:hover {
             text-decoration: underline;
           }
@@ -265,25 +316,25 @@
       }
       text-align: right;
       position: absolute;
-      right: 40px;
-      top: 4rem;
+      right: 30px;
+      bottom: 1rem;
     }
 
     .container {
       margin: 0 auto;
       width: 40%;
+      @media only screen and (max-width: $bp_tablet_max) {
+        width: 65%;
+      }
     }
 
-    .slogan {
-      font-size: 1.55vw;
-      letter-spacing:.3vw;
-      color: $gold;
-      margin: 0rem auto;
-    }
 
     img {
       margin: 0 auto;
       display: block;
+      &.slogan {
+        margin-top: 1rem;
+      }
     }
   }
 }
