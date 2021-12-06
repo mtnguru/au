@@ -24,8 +24,9 @@
 
   $white: #f0f0ff;
 
+
   .wrapper {
-    padding: 3rem;
+    padding: 3rem 3rem 1rem 3rem;
     position: relative;
     max-width: 1280px;
 //  max-width: 1920px;
@@ -361,7 +362,7 @@
 
   footer {
     position: relative;
-    height: 230px;
+    height: 180px;
     text-align: center;
     @media only screen and (max-width: $bp_tablet_max) {
       height: 180px;
@@ -393,7 +394,6 @@
         width: 65%;
       }
     }
-
 
     img {
       margin: 0 auto;
