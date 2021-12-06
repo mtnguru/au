@@ -3,7 +3,7 @@
   background-color: black;
   position: relative;
   background: black;
-  $gold: #c0b892;
+  $gold: #ccc3a2;
   $dark-gold: #644818;
   $light-gold: #e0d982;
 
@@ -87,15 +87,12 @@
 
   section.statement {
     position: relative;
+    color: $gold;
     z-index: 2;
-    border: $gold solid 1px;
     margin: 6rem auto;
     height: 376px;
     width: 100%;
     @include clearfix;
-    background-size: cover;
-    background-position: left center;
-    background-repeat: no-repeat;
 
     @media only screen and (max-width: $bp_tablet_max) {
       width: 100%;
@@ -112,113 +109,182 @@
       }
     }
 
+    .bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-size: cover;
+      background-position: left center;
+      background-repeat: no-repeat;
+      z-index: -2;
+      border: $gold solid 1px;
+      @media only screen and (max-width: $bp_tablet_max) {
+        position: relative;
+        bottom: inherit;
+        right: inherit;
+      }
+    }
+
     .text {
       font-size: 125%;
-      color: $gold;
 
+      @media only screen and (max-width: $bp_tablet_max) {
+        background: rgba(0,0,0,.7);
+      }
       h2 {
         color: inherit;
         font-size: 1.6rem;
       }
-
       p {
         margin: 10px 0;
         line-height: 1.3;
       }
     }
 
+    .note {
+      position: absolute;
+      bottom: 0;
+      right: 2rem;
+      font-style: italic;
+      font-size: 80%;
+    }
+
     &.section1 {
       height: 376px;
-      background-image: url("/themes/custom/sf/img/section1.png");
-
       .text {
-        color: $light-gold;
         padding: 5.5rem 2rem 0 5rem;
         width: 55%;
       }
+      .bg {
+        background-image: url("/themes/custom/sf/img/section1.png");
+      }
 
       @media only screen and (max-width: $bp_tablet_max) {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-            url("/themes/custom/sf/img/section1.png");
-        background-position: right center;
+        margin: 0rem auto;
+        height: auto;
         .text {
-          padding: 2em 1em 0 1em;
-          width: 90%;
-          margin: 0 auto 5em auto;
+          padding: 2em 1em 1em;
+          width: 100%;
+          margin: 0 auto 0 auto;
+        }
+        .bg {
+          width: 100%;
+          height: 250px;
+          background-image: url("/themes/custom/sf/img/section1m.png");
+          //      background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+          //          url("/themes/custom/sf/img/section1m.png");
+          background-position: right center;
         }
       }
     }
 
     &.section2 {
       height: 350px;
-      background-image: url("/themes/custom/sf/img/section2.png");
       .text {
-        color: $light-gold;
         float: right;
         padding: 4rem 2rem;
         width: 45%;
         .note {
+          font-style: italic;
           position: absolute;
           bottom: 1.5rem;
           font-size: 80%;
         }
       }
+      .bg {
+        background-image: url("/themes/custom/sf/img/section2.png");
+      }
+
       @media only screen and (max-width: $bp_tablet_max) {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url("/themes/custom/sf/img/section2.png");
+        margin: 0rem auto;
+        height: auto;
         .text {
-          padding: 2em 1em 0 1em;
-          width: 90%;
-          margin: 0 auto 5em auto;
+          padding: 2em 1em 1em;
+          width: 100%;
+          margin: 0 auto 0em auto;
           float: none;
           .note {
             left: 2rem;
           }
+        }
+        .bg {
+          width: 100%;
+          height: 250px;
+          background-image: url("/themes/custom/sf/img/section2m.jpg");
+          //      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          //          url("/themes/custom/sf/img/section2m.png");
         }
       }
     }
 
     &.section3 {
       height: 450px;
-      background-image: url("/themes/custom/sf/img/section3.png");
       .text {
-        color: $light-gold;
         padding: 5.5rem 2rem 0 5rem;
         width: 55%;
       }
+      .bg {
+        background-image: url("/themes/custom/sf/img/section3.png");
+      }
+
       @media only screen and (max-width: $bp_tablet_max) {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-          url("/themes/custom/sf/img/section3.png");
+        margin: 0rem auto;
+        height: auto;
+        //      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        //        url("/themes/custom/sf/img/section3m.png");
         background-position: right center;
         .text {
-          padding: 2em 1em 0 1em;
-          width: 90%;
-          margin: 0 auto 5em auto;
+          padding: 2em 1em 1em;
+          width: 100%;
+          margin: 0 auto;
+        }
+        .bg {
+          width: 100%;
+          height: 250px;
+          background-image: url("/themes/custom/sf/img/section3m.png");
+          //      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+          //        url("/themes/custom/sf/img/section3m.png");
+          background-position: right center;
         }
       }
     }
 
     &.section4 {
       height: 410px;
-      background-image: url("/themes/custom/sf/img/section4.png");
       .text {
         float: right;
         padding: 4rem 2rem;
         width: 45%;
         .note {
+          font-style: italic;
           position: absolute;
           bottom: 1.5rem;
           font-size: 80%;
         }
-        @media only screen and (max-width: $bp_tablet_max) {
-          padding: 2em 1em 0 1em;
-          color: $dark-gold;
-          width: 90%;
-          margin: 0 auto 5em auto;
+      }
+
+      .bg {
+        background-image: url("/themes/custom/sf/img/section4.png");
+      }
+
+      @media only screen and (max-width: $bp_tablet_max) {
+        margin: 0rem auto;
+        height: auto;
+        .text {
+          padding: 2em 1em 1em;
+          width: 100%;
+          margin: 0 auto;
           float: none;
           .note {
             left: 2rem;
           }
+        }
+        .bg {
+          width: 100%;
+          height: 250px;
+          background-image: url("/themes/custom/sf/img/section4m.png");
         }
       }
     }
@@ -285,7 +351,7 @@
 
       .description {
         text-transform: uppercase;
-        color: $light-gold;
+        color: $gold;
         padding: 1rem;
         font-size: 132%;
         text-shadow: 0px 0px 2px black;
