@@ -43,7 +43,7 @@
   //z-index: 20;
 
   .az-top {
-    display: inline-block;
+//  display: inline-block;
     width: 100%;
 
     .nav-block-wrapper {
@@ -63,8 +63,8 @@
 
     #header-bottom-wrapper {
       width: 100%;
-      background: linear-gradient(270deg, $color-dark-blue, $color-blue);
-      min-height: $navigation-height;
+//    background: linear-gradient(270deg, $color-dark-blue, $color-blue);
+//    min-height: $navigation-height;
     }
     #header-bottom {
       position: relative;
@@ -87,9 +87,9 @@
         left: 8px;
 
         @include media($bp-desktop) {
-          right: $page-padding-desktop;
+          right: 0;
           left: auto;
-          top: -65px;
+          top: -95px;
         }
 
         .links {
@@ -237,7 +237,7 @@
     list-style-type: none;
 
     @include media(max-width $bp-tablet-max) {
-      background: linear-gradient(270deg, $color-dark-blue, $color-blue);
+//    background: linear-gradient(270deg, $color-dark-blue, $color-blue);
       margin-top: -50px;
     }
 
@@ -279,7 +279,7 @@
     @include media ($bp-desktop) {
       display: flex;
       float: right;
-      margin: 0 30px 0 0;
+      margin: 0;
       width: auto;
       max-width: $page-max-width;
       span,
@@ -333,8 +333,7 @@
         text-align: left;
         > span,
         > a {
-//        height: $navigation-height;
-          padding: 14px 15px;
+          padding: 5px 15px;
           vertical-align: middle;
 //        line-height: 1.3;
           font-size: 95%;

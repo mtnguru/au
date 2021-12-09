@@ -30,11 +30,9 @@
 
 html {
   color: $base-fg-color;
-
-//font-family: 'Futurism', sans-serif;
+  background-color: $base-bg-color;
   font-family: 'NeutraText-Book', sans-serif;
-//font-family: 'NeutraText-Bold', sans-serif;
-  font-size: 100%;
+  font-size: 20px;
   line-height: var(--line-height);
 }
 
@@ -48,7 +46,7 @@ h6 {
   font-weight: normal;
   line-height: var(--line-height--heading);
   margin: 0 0 var(--spacing--small);
-  color: $color-title;
+  color: $color-gold;
 }
 
 h1 {

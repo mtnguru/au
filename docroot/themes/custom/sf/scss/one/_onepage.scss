@@ -1,12 +1,9 @@
 /////////////////////////////////////////////////////////////////////////////////
 #onepage {
-  background-color: black;
+  background-color: $base-bg-color;
   position: relative;
-  background: black;
-  $gold: #ccc3a2;
-  $dark-gold: #644818;
-  $light-gold: #e0d982;
-  $link-color: #90f5ff;
+
+  $max-width: 1280px;
 
   .background {
     position: fixed;
@@ -17,19 +14,18 @@
     z-index: 0;
   }
 
-  $white: #f0f0ff;
   a {
     text-decoration: none;
-    color: $link-color;
+    color: $base-link-color;
     &:hover {
       text-decoration: underline;
     }
   }
 
   .wrapper {
-    padding: 3rem 3rem 1rem 3rem;
+    padding: 3rem 3rem 0rem 3rem;
     position: relative;
-    max-width: 1280px;
+    max-width: $max-width;
     margin: 0 auto;
     @media only screen and (max-width: $bp_tablet_max) {
       padding: 3rem 1.5rem;
@@ -84,7 +80,7 @@
 
   section.statement {
     position: relative;
-    color: $gold;
+    color: $color-gold;
     z-index: 2;
     margin: 6rem auto;
     width: 100%;
@@ -115,7 +111,7 @@
       background-position: left center;
       background-repeat: no-repeat;
       z-index: -2;
-      border: $gold solid 1px;
+      border: $color-gold solid 1px;
       @include fixed-aspect(.375 * 100%, '.bg-img');
 
       @media only screen and (max-width: $bp_tablet_max) {
@@ -172,7 +168,7 @@
         .bg {
           width: 100%;
           height: 100%;
-          background-image: url("/themes/custom/sf/img/section1m.png");
+          background-image: url("/themes/custom/sf/img/section1m.jpg");
         }
       }
     }
@@ -235,7 +231,7 @@
         .bg {
           width: 100%;
           height: 100%;
-          background-image: url("/themes/custom/sf/img/section3m.png");
+          background-image: url("/themes/custom/sf/img/section3m.jpg");
         }
       }
     }
@@ -273,7 +269,7 @@
         }
         .bg {
           width: 100%;
-          background-image: url("/themes/custom/sf/img/section4m.png");
+          background-image: url("/themes/custom/sf/img/section4m.jpg");
         }
       }
     }
@@ -297,7 +293,7 @@
 
     .imagine {
       font-size: 1200%;
-      color: $gold;
+      color: $color-gold;
       margin: 0 auto;
       padding: 5rem 0 3rem;
       @media only screen and (max-width: $bp_tablet_max) {
@@ -318,7 +314,7 @@
 
       .video-wrapper {
          padding: 1px;
-         border: $gold solid 1px;
+         border: $color-gold solid 1px;
          position: relative;
 //       height: 250px;
 //       padding: 1rem;
@@ -339,7 +335,7 @@
 
       .description {
         text-transform: uppercase;
-        color: $gold;
+        color: $color-gold;
         padding: 1rem;
         font-size: 132%;
         text-shadow: 0px 0px 2px black;
@@ -349,15 +345,17 @@
 
   footer {
     position: relative;
-    height: 180px;
+    height: 23vh;
     text-align: center;
     @media only screen and (max-width: $bp_tablet_max) {
-      height: 260px;
+      height: 30vh;
     }
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.3) 25%, rgba(0,0,0,.6) 100%);
 
     .links {
       p {
-        margin: 3px 0;
+        margin: .3rem 0;
+        line-height: 1.3;
         a {
           font-size: 110%;
           text-decoration: none;
@@ -369,22 +367,28 @@
       text-align: right;
       position: absolute;
       right: 30px;
-      bottom: 1rem;
+      bottom: .5rem;
     }
 
-    .container {
+    .aureon-logo {
       margin: 0 auto;
-      width: 40%;
+      padding: 2rem;
+    }
+    .container {
       @media only screen and (max-width: $bp_tablet_max) {
-        width: 65%;
+        padding-top: 1vh;
       }
     }
 
     img {
       margin: 0 auto;
       display: block;
+      &.aureon {
+        height: 8vh;
+      }
       &.slogan {
-        margin-top: 1rem;
+        height: 2.5vh;
+        margin-top: .5rem;
       }
     }
   }

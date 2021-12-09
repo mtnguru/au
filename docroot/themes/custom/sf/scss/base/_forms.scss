@@ -32,7 +32,7 @@ legend {
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: var(--spacing--small);
+//margin-bottom: var(--spacing--small);
 }
 
 input,
@@ -41,6 +41,11 @@ textarea {
   display: block;
   font-family: var(--font-family);
   font-size: 1rem;
+  background-color: $form-input-bg-color;
+}
+
+details.form-wrapper {
+  border: 1px solid $form-border-color;
 }
 
 [type="color"],
@@ -60,8 +65,8 @@ textarea {
 input:not([type]),
 textarea {
   appearance: none;
-  background-color: transparent;
-  border: var(--border);
+  background-color: $form-input-bg-color;
+  border: 1px solid $form-border-color;
   border-radius: var(--border-radius);
   box-shadow: var(--form-box-shadow);
   box-sizing: border-box;
@@ -132,6 +137,15 @@ select {
 
 .field--type-language {
   display: none;
+}
+
+.form-item {
+  margin: 0;
+}
+
+div.form-item.form-type-checkbox {
+  margin: 0 0 0 2rem;
+
 }
 
 // Indent radio buttons
