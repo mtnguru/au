@@ -87,9 +87,9 @@
         left: 8px;
 
         @include media($bp-desktop) {
-          right: 0;
+          right: 15px;
           left: auto;
-          top: -95px;
+          top: -100px;
         }
 
         .links {
