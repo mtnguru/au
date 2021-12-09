@@ -21,7 +21,7 @@ body {
   main {
 //  @include outer-container;
     max-width: $page-max-width;
-    padding: 3em 0;
+    padding-bottom: 2em;
   }
 
   &.no-sidebars {

@@ -31,7 +31,7 @@
 
       <section class="section3 statement">
         <div class="text">
-          <h2>HERE NOW</h2>
+          <h2>HERE, NOW</h2>
           <p>Seven years of research and experimentation has led to the creation of a clean nuclear plasma reactor
             capable of all of the above. Aureon Energy is bringing it to market.
         </div>
@@ -143,55 +143,24 @@
       </section>
 
     </div>
+  </div>
 
-    <footer>
-      <div class="links">
-        {% if logged_in %}
-          <p class="login"><a href="/user/logout">LOGOUT</a></p>
-          <p class="investors"><a href="/investors/docs">INVESTOR DOCUMENTS</a></p>
-        {% else %}
-          <p class="login"><a class="login" href="/user/login">LOGIN</a></p>
-        {% endif %}
-      </div>
+  <footer>
+    <div class="links">
+      {% if logged_in %}
+        <p class="login"><a href="/user/logout">LOGOUT</a></p>
+        <p class="investors"><a href="/investors/docs">INVESTOR DOCUMENTS</a></p>
+      {% else %}
+        <p class="login"><a class="login" href="/user/login">LOGIN</a></p>
+      {% endif %}
+    </div>
+    <div class="aureon-logo">
       <div class="container">
         <img src="/themes/custom/sf/img/aureon_logo.png" class="aureon"/>
         <img src="/themes/custom/sf/img/slogan1.png" class="slogan"/>
       </div>
-    </footer>
-  </div>
-</div>
-
-<div class="main-container">
-
-
-  <!--footer id="site-footer" role="contentinfo">
-      <section class="footer-top">
-
-        <div class="left-col">
-          <a class="contact" href="/contact">Contact Us</a>
-        </div>
-
-        <div class="right-col">
-          {% if logged_in %}
-            <a class="login" href="/user/logout">LOGOUT</a>
-          {% else %}
-            <a class="login" href="/user/login">LOGIN</a>
-          {% endif %}
-        </div>
-
-        <div class="middle-col">
-          <div class="company">
-            <div id="site-logo"><a href="/home"><img alt="" src="/sites/default/files/assets/aureon_logo.png" /> </a></div>
-
-            <div id="safire-project">
-              <img class="banner" src="/sites/default/files/assets/company-banner.png"></img>
-              <p class="copyright"><i class="far fa-copyright"></i>2020 AUREON ENERGY LTD. All rights reserved</p>
-            </div>
-          </div>
-        </div>
-
-      </section>
-    </footer-->
+    </div>
+  </footer>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

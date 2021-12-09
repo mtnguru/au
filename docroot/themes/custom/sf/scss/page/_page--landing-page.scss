@@ -1,6 +1,7 @@
 body.page-node-type-landing-page {
-  color: #516A7C;
   section.banner {
+    border-top: 1px solid $base-border-color;
+    border-bottom: 1px solid $base-border-color;
     position: relative;
     background-size: cover;
     height: 40vh;
@@ -29,7 +30,7 @@ body.page-node-type-landing-page {
       }
       h1 {
         text-shadow: 1px 1px 3px $color-dark-gray;
-        color: white;
+        color: $color-gold;
         font-size: 130%;
         @include media($bp-desktop) {
           font-size: 160%;
@@ -44,6 +45,7 @@ body.page-node-type-landing-page {
 
 
   form.contact-message-sitewide-form {
+    font-size: 120%;
     width: 520px;
     @include media (max-width $bp-mobile-max) {
       width: 320px;
@@ -55,7 +57,7 @@ body.page-node-type-landing-page {
       box-shadow: none;
     }
   }
-  
+
   .field--name-field-share-on-social-media {
     float: right;
     font-size: 90%;

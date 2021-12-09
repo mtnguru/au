@@ -1,11 +1,10 @@
-// Color definitions
 $color-light-gray: #DDD !default;
 $color-gray: #999 !default;
-$color-dark-gray: #333 !default;
+$color-dark-gray: #222 !default;
 
-$color-white: #FAFAFF;
+$color-white: #EAEAF4;
 $color-light-white: #F4F4F8;
-$color-black: #222233;
+$color-black: #050505;
 
 $color-light-tan: #fff8dc;
 $color-tan: #D2B48C;
@@ -16,7 +15,7 @@ $color-light-green: #B9D9C4;
 $color-green: #33cc33;
 $color-dark-green: #1a401a;
 
-$color-light-blue: #78B4EE;
+$color-light-blue: #90f5ff;
 $color-lighter-blue: #3E95C2;
 $color-blue: #286a8b;
 $color-darker-blue: #0B3F59;
@@ -34,7 +33,9 @@ $color-dark-purple: #2A1A3E;
 $color-pink: #F32BFF;
 
 $color-yellow: #FFFF00;
-$color-gold: #FFCA00;
+$color-light-gold: #e0d982;
+$color-gold: #ccc3a2;
+$color-dark-gold: #644818;
 $color-aluminum: #D9D9D9;
 $color-orange: #F46036;
 
@@ -58,19 +59,20 @@ $color-tooltip: $color-green;
 $viewport-bg-color: $color-white;
 
 // Base colors.
-$base-bg-color: $color-white !default;
-$base-fg-color: $color-black !default;
+$base-bg-color: $color-black !default;
+$base-fg-color: $color-white !default;
 $base-bd-color: gainsboro !default;
-$base-accent-color: #477DCA !default;
+$base-accent-color: #90f5ff !default;
 $base-link-color: $base-accent-color !default;
 $base-link-color--hover: darken($base-accent-color, 20) !default;
 $base-label-color: $color-light-green;
 $base-date-color: $color-gray;
+$base-border-color: $color-gold;
 
 $separator-color: $color-gold;
 
 // Button colors.
-$base-button-color: $color-dark-green;
+$base-button-color: $color-blue;
 $base-button-color--contrast: $color-white;
 $base-button-color--inactive: lighten($base-button-color, 30%);
 $base-button-color--selected: darken($base-button-color, 15%);
@@ -86,6 +88,10 @@ $dialog-sh-color: $color-dark-gray;
 $dialog-title-fg-color: $color-black;
 $dialog-title-bg-color: darken($color-light-green, 15%);
 $dialog-button-bg-color: $color-dark-blue;
+
+// Form colors.
+$form-border-color: $color-dark-gold;
+$form-input-bg-color: $color-dark-gray;
 
 // Table colors.
 $table-border-color: $base-bd-color;

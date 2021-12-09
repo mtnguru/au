@@ -437,6 +437,7 @@ function _az_content_add_node_to_media($media, $articleId) {
 function az_content_preprocess_block(&$variables) {
   switch ($variables['plugin_id']) {
     case 'top_nav_block':
+    case 'au_header_block':
       $current_path = \Drupal::service('path.current')->getPath();
       $variables['page_url'] = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
       $uid = \Drupal::currentUser()->id();

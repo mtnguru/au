@@ -1,3 +1,10 @@
 #block-sf-primary-local-tasks {
-  background-color: $color-lightest-purple;
+  background-color: $color-dark-purple;
+  .tabs {
+    a {
+      &.is-active {
+        background-color: lighten($color-dark-purple, 10%);
+      }
+    }
+  }
 }

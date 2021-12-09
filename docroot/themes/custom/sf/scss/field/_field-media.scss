@@ -28,9 +28,8 @@ article.media {
 
   .field--name-field-description {
     margin: 15px 20px 0;
-    font-size: 95%;
     text-align: left;
-    color: lighten($color-black, 10%);
+    color: $color-gray;
   }
 
   >.az-image {

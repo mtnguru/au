@@ -47,37 +47,20 @@
     {% endif %}
   </main>
 
-    <footer id="site-footer" role="contentinfo">
-
-      <section class="footer-top">
-        <div class="left-col">
-          <a class="contact" href="/contact">Contact Us</a>
-        </div>
-
-        <div class="right-col">
-          {% if logged_in %}
-            <a class="login" href="/user/logout">Logout</a>
-          {% else %}
-            <a class="login" href="/user/login">Login</a>
-          {% endif %}
-        </div>
-
-        <div class="middle-col">
-          <div class="company">
-            <div id="site-logo"><a href="/home"><img alt="" src="/sites/default/files/assets/aureon_logo.png" /> </a></div>
-
-            <div id="safire-project">
-              <img class="banner" src="/sites/default/files/assets/company-banner.png"></img>
-              <p class="copyright"><i class="far fa-copyright"></i>2020 AUREON ENERGY LTD. All rights reserved</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {% if page.footer_bottom %}
-        <section class="footer-bottom">
-          {{ page.footer_bottom }}
-        </section>
+  <footer id="site-footer">
+    <div class="links">
+      {% if logged_in %}
+        <p class="login"><a href="/user/logout">LOGOUT</a></p>
+        <p class="investors"><a href="/investors/docs">INVESTOR DOCUMENTS</a></p>
+      {% else %}
+        <p class="login"><a class="login" href="/user/login">LOGIN</a></p>
       {% endif %}
-    </footer>
+    </div>
+    <div class="aureon-logo">
+      <div class="container">
+        <img src="/themes/custom/sf/img/aureon_logo.png" class="aureon"/>
+        <!--img src="/themes/custom/sf/img/slogan1.png" class="slogan"/-->
+      </div>
+    </div>
+  </footer>
 </div>

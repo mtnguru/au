@@ -231,16 +231,16 @@ function az_user_preprocess_menu(&$variables) {
     $user = \Drupal::entityTypeManager()
       ->getStorage('user')
       ->load(\Drupal::currentUser()->id());
-//  if ($user) {
-//    if ($user->user_picture->isEmpty()) {
-//      $variables['user_name'] = $user->name[0]->value;
-//    }
-//    else {
-//      $fid = $user->user_picture[0]->target_id;
-//      $file = \Drupal\file\Entity\File::load($fid);
-//      $variables['user_picture_url'] = \Drupal\image\Entity\ImageStyle::load('thumbnail')->buildUrl($file->getFileUri());
-//    }
-//  }
+    if ($user) {
+      if ($user->user_picture->isEmpty()) {
+        $variables['user_name'] = $user->name[0]->value;
+      }
+      else {
+        $fid = $user->user_picture[0]->target_id;
+        $file = \Drupal\file\Entity\File::load($fid);
+        $variables['user_picture_url'] = \Drupal\image\Entity\ImageStyle::load('thumbnail')->buildUrl($file->getFileUri());
+      }
+    }
   }
 }
 
