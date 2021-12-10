@@ -75,7 +75,8 @@
         "drupal/eu_cookie_compliance": "^1.9",
         "drupal/rocket_chat": "^2.5",
         "drush/drush": "^10.6",
-        "drupal/contact_poup": "^2.0"
+        "drupal/contact_poup": "^2.0",
+        "drupal/zuvi": "^8.1"
     },
     "require-dev": {
     },
