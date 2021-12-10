@@ -74,8 +74,17 @@ textarea {
   padding: calc(var(--spacing) / 3);
   transition: border-color var(--duration) var(--timing);
   width: 100%;
+  &:hover {
+    background-color: $form-input-bg-color;
+    border-color: $color-gold;
+  }
+  &:focus-visible {
+    background-color: $form-input-bg-color;
+    border-color: $color-dark-gold;
+  }
 
   &:focus {
+    background-color: $form-input-bg-color;
     box-shadow: var(--form-box-shadow-focus);
   }
 
@@ -105,6 +114,16 @@ textarea {
 [type="radio"] {
   display: inline;
   margin-right: var(--spacing--small);
+  accent-color: $color-dark-gold;
+  &:focus {
+//  focus-outline: $color-gold;
+  }
+  :after {
+    content: " ";
+    background-color: orange;
+    display: inline-block;
+    visibility: visible;
+  }
 }
 
 [type="file"] {

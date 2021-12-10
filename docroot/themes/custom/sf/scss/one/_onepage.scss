@@ -28,7 +28,7 @@
     max-width: $max-width;
     margin: 0 auto;
     @media only screen and (max-width: $bp_tablet_max) {
-      padding: 3rem 1.5rem;
+      padding: 3rem 1.5rem 0;
     }
   }
 
@@ -142,17 +142,29 @@
     }
 
     .note {
+      margin: 0;
       position: absolute;
-      bottom: 0;
-      right: 2rem;
+      bottom: 1.5rem;
+      right: 1.5rem;
+
       font-style: italic;
-      font-size: 70%;
+      font-size: 75%;
       line-height: 1.1;
+      p {
+        margin: 0;
+      }
+      @media only screen and (max-width: $bp_tablet_max) {
+        width: 88px;
+        font-style: italic;
+        bottom: 3px;
+        right: auto;
+        left: 6px;
+      }
     }
 
     &.section1 {
       .text {
-        padding: 5.5rem 2rem 0 5rem;
+        padding: 3rem 2rem 0 5rem;
         width: 55%;
       }
       .bg {
@@ -177,15 +189,8 @@
     &.section2 {
       .text {
         float: right;
-        padding: 4rem 2rem;
+        padding: 3rem 0 2rem 2rem;
         width: 45%;
-      }
-      .note {
-        font-style: italic;
-        position: absolute;
-        bottom: 1rem;
-        font-size: 70%;
-        line-height: 1.1;
       }
       .bg {
         background-image: url("/themes/custom/sf/img/section2.png");
@@ -199,10 +204,6 @@
           width: 100%;
           margin: 0 auto;
           float: none;
-        }
-        .note {
-          left: 1rem;
-          bottom: 0rem;
         }
         .bg {
           width: 100%;
@@ -245,13 +246,6 @@
         padding: 4rem 2rem;
         width: 45%;
       }
-      .note {
-        font-style: italic;
-        position: absolute;
-        bottom: 1rem;
-        font-size: 80%;
-      }
-
       .bg {
         background-image: url("/themes/custom/sf/img/section4.png");
       }
@@ -264,10 +258,6 @@
           width: 100%;
           margin: 0 auto;
           float: none;
-        }
-        .note {
-          left: 1rem;
-          bottom: 0rem;
         }
         .bg {
           width: 100%;
@@ -348,13 +338,13 @@
   footer {
     position: relative;
     margin-top: 2rem;
-    height: 23vh;
+    height: 200px;
     text-align: center;
 //  background: $color-black;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.6) 30%, rgba(0,0,0,.8) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.4) 30%, rgba(0,0,0,.6) 100%);
     @media only screen and (max-width: $bp_tablet_max) {
       height: 30vh;
-      background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.4) 30%, rgba(0,0,0,.7) 100%);
+//    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.4) 30%, rgba(0,0,0,.7) 100%);
     }
 
     .links {
@@ -377,7 +367,10 @@
 
     .aureon-logo {
       margin: 0 auto;
-      padding: 4rem 0 0;
+      padding: 3rem 0 0;
+      @media only screen and (max-width: $bp_tablet_max) {
+        padding: 2rem 0 0;
+      }
     }
     .container {
       @media only screen and (max-width: $bp_tablet_max) {
