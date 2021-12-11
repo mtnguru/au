@@ -76,7 +76,8 @@
         "drupal/rocket_chat": "^2.5",
         "drush/drush": "^10.6",
         "drupal/contact_poup": "^2.0",
-        "drupal/zuvi": "^8.1"
+        "drupal/zuvi": "^8.1",
+        "drupal/menu_per_role": "^1.3"
     },
     "require-dev": {
     },

@@ -1,0 +1,18 @@
+form.contact-form {
+  .field--type-address {
+    summary {
+      display: none;
+    }
+    details {
+      border: none;
+    }
+    .details-wrapper {
+      padding: 0;
+    }
+    select {
+      height: 40px;
+      border: 1px solid $form-input-border-color;
+      border-radius: var(--border-radius);
+    }
+  }
+}

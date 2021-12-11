@@ -22,20 +22,20 @@ $color-darker-blue: #0B3F59;
 $color-dark-blue: #022234;
 
 $color-light-red: #ff8899;
-$color-red: #ff1111;
+$color-red: #d01154;
 $color-dark-red: #991024;
 
 $color-lightest-purple: #e5e0ff;
 $color-light-purple: #b070ff;
-$color-purple: #6E47B2;
-$color-dark-purple: #2A1A3E;
+$color-purple: #6612a0;
+$color-dark-purple: #280740;
 
 $color-pink: #F32BFF;
 
 $color-yellow: #FFFF00;
 $color-light-gold: #e0d982;
 $color-gold: #ccc3a2;
-$color-dark-gold: #644818;
+$color-dark-gold: #745818;
 $color-aluminum: #D9D9D9;
 $color-orange: #F46036;
 
@@ -90,7 +90,8 @@ $dialog-title-bg-color: darken($color-light-green, 15%);
 $dialog-button-bg-color: $color-dark-blue;
 
 // Form colors.
-$form-border-color: $color-dark-gold;
+$form-border-color: $color-gold;
+$form-input-border-color: $color-dark-gold;
 $form-input-bg-color: $color-dark-gray;
 
 // Table colors.

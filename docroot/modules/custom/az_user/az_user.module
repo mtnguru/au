@@ -54,6 +54,9 @@ function _az_user_user_form_submit(&$form, FormStateInterface &$form_state)
  */
 function az_user_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
+  $form['name']['#title'] = 'Email address';
+  $form['name']['#description'] = '';
+  $form['pass']['#description'] = '';
   $form['login-form'] = [
     '#type' => 'container',
     '#weight' => 0,
@@ -77,22 +80,6 @@ function az_user_form_user_login_form_alter(&$form, FormStateInterface $form_sta
   unset($form['name']);
   unset($form['pass']);
   unset($form['actions']);
-
-  // Add the join block that goes below the login form.   nid 321
-//$node = Node::load(321);
-//$body = $node->body->value;
-//$body = preg_replace('/\$num_users/', '666', $body);
-
-// - This errors - came from az.  James
-//$node->body->setValue($body);
-
-//$build = \Drupal::entityTypeManager()->getViewBuilder('node')->view($node, 'full');
-//$build['#status'] = $body;$form['join_block'] = [
-//  '#type' => 'container',
-//  '#attributes' => ['class' => ['join-block']],
-//  '#weight' => 100,
-//  'markup' => ['#markup' => render($build)],
-//];
 
  $form['#submit'][] = '_az_user_login_form_submit';
 
@@ -124,6 +111,7 @@ function _az_user_login_form_submit(&$form, FormStateInterface &$form_state) {
 function az_user_form_user_pass_alter(&$form, FormStateInterface $form_state, $form_id) {
 //$form['#submit'][] = '_az_user_user_pass_submit';
 //$form['actions']['submit']['#submit'][] = '_az_user_user_pass_submit';
+  $form['name']['#title'] = 'Email address';
   return;
 }
 
