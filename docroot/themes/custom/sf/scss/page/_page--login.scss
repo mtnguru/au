@@ -4,15 +4,19 @@ body.user-login {
   }
 
   #block-sf-content {
-    max-width: 440px;
+    max-width: 450px;
     margin: 0 auto;
     .login-form {
+      margin: 3rem 0;
       padding: 30px;
     }
   }
 }
 
 body.user-password {
+  #content {
+    margin: 3rem 0;
+  }
   section#content {
     > div {
       max-width: 440px;
