@@ -114,8 +114,8 @@ class AzContact {
     // Read in the contact;
     $contact = \Drupal::entityTypeManager()->getStorage('node')->load($contactId);
 
-    if (!$cm->field_interest->isEmpty()) {
-      $existingInterests = array_column($contact->field_interest->getValue(), 'target_id');
+//  if (!$cm->field_interest->isEmpty()) {
+//    $existingInterests = array_column($contact->field_interest->getValue(), 'target_id');
 //    if (!in_array($cm->field_interest->getValue(), $existingInterests)) {
 //      $contact->field_interest[] = $cm->field_interest;
 //    }
@@ -130,9 +130,9 @@ class AzContact {
     if (!$cm->field_address->isEmpty()) {
       $contact->field_address->setValue($cm->field_address->getValue());
     }
-    if (!$cm->field_interest->isEmpty()) {
-      $contact->field_interest->setValue($cm->field_interest->getValue());
-    }
+//  if (!$cm->field_interest->isEmpty()) {
+//    $contact->field_interest->setValue($cm->field_interest->getValue());
+//  }
 
     $contact->save();
     return;
