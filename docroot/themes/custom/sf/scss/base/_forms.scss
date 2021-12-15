@@ -42,7 +42,7 @@ textarea {
   display: block;
   font-family: var(--font-family);
   font-size: 1rem;
-  background-color: $form-input-bg-color;
+//background-color: $form-input-bg-color;
 }
 
 details.form-wrapper {
@@ -65,8 +65,9 @@ details.form-wrapper {
 [type="week"],
 input:not([type]),
 textarea {
+  color: $color-black;
   appearance: none;
-  background-color: $form-input-bg-color;
+//background-color: $form-input-bg-color;
   border: 1px solid $form-input-border-color;
   border-radius: var(--border-radius);
   box-shadow: var(--form-box-shadow);
@@ -76,16 +77,16 @@ textarea {
   transition: border-color var(--duration) var(--timing);
   width: 100%;
   &:hover {
-    background-color: $form-input-bg-color;
+//  background-color: $form-input-bg-color;
     border-color: $color-gold;
   }
   &:focus-visible {
-    background-color: $form-input-bg-color;
+//  background-color: $form-input-bg-color;
     border: var(--input-border);
   }
 
   &:focus {
-    background-color: $form-input-bg-color;
+//  background-color: $form-input-bg-color;
     box-shadow: var(--form-box-shadow-focus);
   }
 
@@ -115,13 +116,13 @@ textarea {
 [type="radio"] {
   display: inline;
   margin-right: var(--spacing--small);
-  accent-color: $color-dark-gold;
+//accent-color: $color-dark-gold;
   &:focus {
 //  focus-outline: $color-gold;
   }
   :after {
     content: " ";
-    background-color: orange;
+//  background-color: orange;
     display: inline-block;
     visibility: visible;
   }
@@ -135,6 +136,8 @@ textarea {
 select {
   margin-bottom: var(--spacing--small);
   width: 100%;
+  color: $color-black;
+  background-color: #fff;
 }
 
 [type="checkbox"],

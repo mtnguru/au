@@ -17,13 +17,13 @@ body.page-node-type-landing-page {
     }
 
     .banner-title {
-      font-family: "Trajan Pro";
       max-width: $page-max-width;
       position: absolute;
-      top: 20px;
-      right: 20px;
+      bottom: 20px;
+      left: 20px;
       @include media($bp-desktop) {
-        right: 50px;
+        left: 50px;
+        bottom: 20px;
       }
       img {
         height: 18px;
@@ -40,15 +40,15 @@ body.page-node-type-landing-page {
   }
 
   #block-sf-page-title {
-    display: none;
+    text-align: center;
+    margin-top: 3em;
   }
-
 
   form.contact-message-sitewide-form {
     font-size: 120%;
     width: 520px;
     @include media (max-width $bp-mobile-max) {
-      width: 320px;
+      width: 95%;
     }
 
     margin: 0 auto;
