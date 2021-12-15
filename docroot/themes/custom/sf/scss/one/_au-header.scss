@@ -4,6 +4,9 @@ main.outer-wrapper {
 /////////////////////////////////////////////////////////////////////////////////
 #au-header {
   position: relative;
+  @media only screen and (max-width: $bp-tablet-max) {
+    margin-bottom: 1rem;
+  }
 
   header {
 //  height: 100vh;
@@ -29,12 +32,13 @@ main.outer-wrapper {
     .aureon-logo {
       z-index: 0;
       position: relative;
-      padding: 3vh 0 0 4vh;
+      padding: 4vh 0 0 4vh;
       width: 30%;
       @media only screen and (max-width: $bp-desktop-max) {
         width: 40%;
       }
       @media only screen and (max-width: $bp-tablet-max) {
+        padding: 4vh 0 0 0;
         width: 75%;
         float: none;
         margin: 0 auto;

@@ -51,7 +51,7 @@
     }
     #header-bottom {
       position: relative;
-      max-width: $page-max-width;
+//    max-width: $page-max-width;
       margin: 0 auto;
       vertical-align: top;
 
@@ -60,14 +60,14 @@
         text-align: right;
       }
       @include media($bp-desktop) {
-        right: 50px;
+        right: 2rem;
         text-align: left;
       }
 
       .user-menu {
         position: absolute;
         top: 0px;
-        left: 8px;
+        left: 30px;
 
         @include media($bp-desktop) {
           right: 15px;
@@ -188,9 +188,10 @@
     line-height: $navigation-height;
     padding: 0 30px;
     font-size: 180%;
+    float: right;
 
     .fas {
-      font-size: 110%;
+      font-size: 130%;
       vertical-align: middle;
     }
 
@@ -200,7 +201,7 @@
 
     &:focus,
     &:hover {
-      color: lighten($color-light-blue, 15%);
+      color: $color-gold;
       text-decoration: none;
     }
 
@@ -213,7 +214,6 @@
     clear: both;
     font-weight: normal;
     display: none;
-    padding: 0;
     list-style: none;
     width: 100%;
     margin: 0 auto;
@@ -222,6 +222,7 @@
     @include media(max-width $bp-tablet-max) {
 //    background: linear-gradient(270deg, $color-dark-blue, $color-blue);
       margin-top: -50px;
+      padding: 0;
     }
 
     @include media($bp-desktop) {
@@ -262,9 +263,8 @@
     @include media ($bp-desktop) {
       display: flex;
       float: right;
-      margin: 0;
+      margin-right: 2rem;
       width: auto;
-      max-width: $page-max-width;
       span,
       a {
         min-width: auto;
