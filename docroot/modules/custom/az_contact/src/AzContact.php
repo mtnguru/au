@@ -119,7 +119,7 @@ class AzContact {
 //    if (!in_array($cm->field_interest->getValue(), $existingInterests)) {
 //      $contact->field_interest[] = $cm->field_interest;
 //    }
-    }
+//  }
     $contact->field_last_contact_date->setValue(date('Y-m-d', $cm->created->value));
 
     $contact->setTitle($cm->label());
