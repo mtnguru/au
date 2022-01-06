@@ -3,12 +3,18 @@ body.url-leadership {
     article {
       padding-left: 30px;
       padding-right: 30px;
+      @include media(max-width $bp-tablet-max) {
+        padding: 0;
+      }
     }
   }
   .layout__region--second {
     article {
       padding-right: 30px;
       padding-left: 30px;
+      @include media(max-width $bp-tablet-max) {
+        padding: 0;
+      }
     }
   }
 
