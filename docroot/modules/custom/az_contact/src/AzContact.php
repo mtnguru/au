@@ -33,10 +33,10 @@ class AzContact {
     $query->leftJoin('contact_message__field_contact', 'cmfc', 'cm.id = cmfc.entity_id');
 // ??  $query->addField('cmfp', 'field_phone_value', 'phone');
 
-    $query->leftJoin('contact_message__field_interest', 'cmfi', 'cm.id = cmfi.entity_id');
-    $query->leftJoin('taxonomy_term_field_data', 'ttfd', 'cmfi.field_interest_target_id = ttfd.tid');
-    $query->addField('cmfi', 'field_interest_target_id', 'interestId');
-    $query->addField('ttfd', 'name', 'interest');
+//  $query->leftJoin('contact_message__field_interest', 'cmfi', 'cm.id = cmfi.entity_id');
+//  $query->leftJoin('taxonomy_term_field_data', 'ttfd', 'cmfi.field_interest_target_id = ttfd.tid');
+//  $query->addField('cmfi', 'field_interest_target_id', 'interestId');
+//  $query->addField('ttfd', 'name', 'interest');
 
 //$query->condition('nfd.status', $set['status'], (is_array($set['status'])) ? 'IN' : '=');
 
@@ -76,8 +76,8 @@ class AzContact {
 
   static public function createContact($cm, $source) {
 
-    $interestv = $cm->field_interest->getValue();
-    $interest = $cm->field_interest->getString();
+//  $interestv = $cm->field_interest->getValue();
+//  $interest = $cm->field_interest->getString();
     $addressv = $cm->field_address->getValue();
     $address = $cm->field_address->getString();
     $node = Node::create([
@@ -85,7 +85,7 @@ class AzContact {
       'status'         => 1,
       'title'          => $cm->name->value,
       'field_email'    => $cm->mail->value,
-      'field_interest' => $cm->field_interest->getValue(),
+//    'field_interest' => $cm->field_interest->getValue(),
       'field_phone'    => $cm->field_phone->value,
       'field_source'   => $source,
       'field_first_contact_date' => date('Y-m-d', $cm->created->value),

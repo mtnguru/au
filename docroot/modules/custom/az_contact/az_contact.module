@@ -90,9 +90,9 @@ function az_contact_emailit ($email) {
 
     // Create array of selected Interest Ids
     $interestIds = [];
-    foreach ($email->get('field_interest') as $item) {
-      $interestIds[] = $item->target_id;
-    }
+//  foreach ($email->get('field_interest') as $item) {
+//    $interestIds[] = $item->target_id;
+//  }
 
     if (count($interestIds)) {
       // Create the mailing list
