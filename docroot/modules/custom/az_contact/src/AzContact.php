@@ -34,8 +34,8 @@ class AzContact {
 // ??  $query->addField('cmfp', 'field_phone_value', 'phone');
 
 //  $query->leftJoin('contact_message__field_interest', 'cmfi', 'cm.id = cmfi.entity_id');
-    $query->leftJoin('taxonomy_term_field_data', 'ttfd', 'cmfi.field_interest_target_id = ttfd.tid');
-    $query->addField('cmfi', 'field_interest_target_id', 'interestId');
+//  $query->leftJoin('taxonomy_term_field_data', 'ttfd', 'cmfi.field_interest_target_id = ttfd.tid');
+//  $query->addField('cmfi', 'field_interest_target_id', 'interestId');
 //  $query->addField('ttfd', 'name', 'interest');
 
 //$query->condition('nfd.status', $set['status'], (is_array($set['status'])) ? 'IN' : '=');
