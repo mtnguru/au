@@ -123,7 +123,7 @@
 
     .text {
       position: relative;
-      font-size: 125%;
+      font-size: 120%;
       float: left;
 
       h2 {
@@ -174,7 +174,7 @@
 
     &.section1 {
       .text {
-        padding: 4rem 0rem 0 4rem;
+        padding: 3rem 0rem 0 3rem;
         width: 45%;
       }
       .bg {
@@ -226,8 +226,8 @@
     &.section3 {
 //    height: 450px;
       .text {
-        padding: 4rem 0rem 0 4rem;
-        width: 45%;
+        padding: 2rem 0rem 0 2rem;
+        width: 60%;
       }
       .bg {
         background-image: url("/themes/custom/sf/img/section3.png");
@@ -253,7 +253,7 @@
 //    height: 410px;
       .text {
         float: right;
-        padding: 4rem 3rem 0 0rem;
+        padding: 2.5rem 3rem 0 0rem;
         width: 45%;
       }
       .bg {
