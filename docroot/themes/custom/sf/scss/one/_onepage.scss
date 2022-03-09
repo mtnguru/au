@@ -134,6 +134,9 @@
         margin: 10px 0;
         line-height: 1.3;
       }
+      @media only screen and (max-width: $bp_desktop_max) {
+        font-size: 100%;
+      }
       @media only screen and (max-width: $bp_tablet_max) {
         float: none;
         position: relative;
@@ -226,8 +229,11 @@
     &.section3 {
 //    height: 450px;
       .text {
-        padding: 2rem 0rem 0 2rem;
-        width: 60%;
+        padding: 3rem 0rem 0 2rem;
+        width: 55%;
+        @media only screen and (max-width: $bp_desktop_max) {
+          padding: 2.0rem 0rem 0 2rem;
+        }
       }
       .bg {
         background-image: url("/themes/custom/sf/img/section3.png");

@@ -14,13 +14,11 @@ $bp-widescreen: rem($bp-widescreen-px);
 $bp-superwide: rem($bp-superwide-px);
 
 $bp-mobile-max: rem(($bp-tablet-px - 1));
-//$bp-mobile-max-toolbar: rem(($bp-tablet-toolbar - 1));
 $bp-tablet-max: rem(($bp-desktop-px - 1));
 $bp-desktop-max: rem(($bp-widescreen-px - 1));
 $bp-widescreen-max: rem(($bp-superwide-px - 1));
 
 $bp-mobile-only: max-width $bp-mobile-max;
-//$bp-mobile-only-toolbar: max-width $bp-mobile-max-toolbar;
 $bp-tablet-only: min-width $bp-tablet max-width $bp-tablet-max;
 $bp-desktop-only: min-width $bp-desktop max-width $bp-desktop-max;
 $bp-widescreen-only: min-width $bp-widescreen max-width $bp-widescreen-max;
