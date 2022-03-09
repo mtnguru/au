@@ -32,6 +32,7 @@
     }
   }
 
+  /*
   #page {
     @media only screen and (max-width: $bp_desktop) {
     }
@@ -40,6 +41,7 @@
     @media only screen and (max-width: $bp_mobile) {
     }
   }
+  */
 
   header {
     z-index: 1;
@@ -232,14 +234,14 @@
         padding: 3rem 0rem 0 2rem;
         width: 55%;
         @media only screen and (max-width: $bp_desktop_max) {
-          padding: 2.0rem 0rem 0 2rem;
+          padding: 1.5rem 0rem 0 2rem;
         }
       }
       .bg {
         background-image: url("/themes/custom/sf/img/section3.png");
       }
 
-      @media only screen and (max-width: $bp_tablet_max) {
+      @media only screen and (max-width: $bp_tablet-max) {
         margin: 0rem auto;
         height: auto;
         .text {
