@@ -1,0 +1,417 @@
+/////////////////////////////////////////////////////////////////////////////////
+#twopage {
+  background-color: $base-bg-color;
+  position: relative;
+
+  $max-width: 1280px;
+
+  .background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/themes/custom/sf/img/earth.jpg");
+    background-size: cover;
+    z-index: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $base-link-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .wrapper {
+    padding: 3rem 3rem 0rem 3rem;
+    position: relative;
+    max-width: $max-width;
+    margin: 0 auto;
+    @media only screen and (max-width: $bp_tablet_max) {
+      padding: 3rem 1.5rem 0;
+    }
+  }
+
+  /*
+  #page {
+    @media only screen and (max-width: $bp_desktop) {
+    }
+    @media only screen and (max-width: $bp_tablet) {
+    }
+    @media only screen and (max-width: $bp_mobile) {
+    }
+  }
+  */
+
+  header {
+    z-index: 1;
+    height: 30vh;
+    @media only screen and (max-width: $bp_tablet_max) {
+      height: 50vh;
+    }
+
+    .container {
+      float: right;
+      margin-top: 4vh;
+      margin-right: 3vw;
+      width: 50%;
+      @media only screen and (max-width: $bp-desktop-max) {
+        width: 56%;
+      }
+      @media only screen and (max-width: $bp-tablet-max) {
+        width: 75%;
+        float: none;
+        margin: 0 auto;
+        padding-right: 0;
+      }
+      @media only screen and (max-width: $bp-mobile-max) {
+        width: 85%;
+      }
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .slogan {
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+  } // header
+
+  section.statement {
+    position: relative;
+    color: $color-gold;
+    z-index: 2;
+    margin: 6rem auto;
+    width: 100%;
+    @include clearfix;
+
+    @media only screen and (max-width: $bp_tablet_max) {
+      width: 100%;
+      margin: 3rem auto;
+    }
+
+    .image {
+      width: 40%;
+      img {
+        display: block;
+        @media only screen and (max-width: $bp_tablet_max) {
+          filter: brightness(50%);
+        }
+      }
+    }
+
+    .bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-size: cover;
+      background-position: left center;
+      background-repeat: no-repeat;
+      z-index: -2;
+      border: $color-gold solid 1px;
+      @include fixed-aspect(.375 * 100%, '.bg-img');
+
+      @media only screen and (max-width: $bp_tablet_max) {
+//      position: relative;
+//      bottom: inherit;
+//      right: inherit;
+      }
+    }
+
+    .text {
+      position: relative;
+      font-size: 120%;
+      float: left;
+
+      h2 {
+        color: inherit;
+        font-size: 150%;
+      }
+      p {
+        margin: 10px 0;
+        line-height: 1.3;
+      }
+      @media only screen and (max-width: $bp_desktop_max) {
+        font-size: 100%;
+      }
+      @media only screen and (max-width: $bp_tablet_max) {
+        float: none;
+        position: relative;
+        background: rgba(0,0,0,.7);
+        font-size: 105%;
+        @media only screen and (max-width: $bp_tablet_max) {
+          float: none;
+          position: relative;
+          background: rgba(0,0,0,.7);
+          font-size: 100%;
+          h2 {
+            font-size: 140%;
+          }
+        }
+      }
+    }
+
+    .note {
+      margin: 0;
+      position: absolute;
+      bottom: 1.5rem;
+      right: 1.5rem;
+
+      font-style: italic;
+      font-size: 75%;
+      line-height: 1.1;
+      p {
+        margin: 0;
+      }
+      @media only screen and (max-width: $bp_tablet_max) {
+        width: 100px;
+        font-style: italic;
+        bottom: 3px;
+        right: auto;
+        left: 6px;
+      }
+    }
+
+    &.section1 {
+      .text {
+        padding: 3rem 0rem 0 3rem;
+        width: 45%;
+      }
+      .bg {
+        background-image: url("/themes/custom/sf/img/section1.png");
+      }
+
+      @media only screen and (max-width: $bp_tablet_max) {
+        margin: 0rem auto;
+        .text {
+          padding: 2em 1em 1em;
+          width: 100%;
+          margin: 0 auto 0 auto;
+        }
+        .bg {
+          width: 100%;
+          height: 100%;
+          background-image: url("/themes/custom/sf/img/section1m.jpg");
+        }
+      }
+    }
+
+    &.section2 {
+      .text {
+        float: right;
+        padding: 4rem 3rem 0 0;
+        width: 45%;
+      }
+      .bg {
+        background-image: url("/themes/custom/sf/img/section2.png");
+      }
+
+      @media only screen and (max-width: $bp_tablet_max) {
+        margin: 0rem auto;
+//      height: auto;
+        .text {
+          padding: 2em 1em 1em;
+          width: 100%;
+          margin: 0 auto;
+          float: none;
+        }
+        .bg {
+          width: 100%;
+          height: 100%;
+          background-image: url("/themes/custom/sf/img/section2m.jpg");
+        }
+      }
+    }
+
+    &.section3 {
+//    height: 450px;
+      .text {
+        padding: 3rem 0rem 0 2rem;
+        width: 55%;
+        @media only screen and (max-width: $bp_desktop_max) {
+          padding: 1.5rem 0rem 0 2rem;
+        }
+      }
+      .bg {
+        background-image: url("/themes/custom/sf/img/section3.png");
+      }
+
+      @media only screen and (max-width: $bp_tablet-max) {
+        margin: 0rem auto;
+        height: auto;
+        .text {
+          padding: 2em 1em 1em;
+          width: 100%;
+          margin: 0 auto;
+        }
+        .bg {
+          width: 100%;
+          height: 100%;
+          background-image: url("/themes/custom/sf/img/section3m.jpg");
+        }
+      }
+    }
+
+    &.section4 {
+//    height: 410px;
+      .text {
+        float: right;
+        padding: 2.5rem 3rem 0 0rem;
+        width: 45%;
+      }
+      .bg {
+        background-image: url("/themes/custom/sf/img/section4.png");
+      }
+
+      @media only screen and (max-width: $bp_tablet_max) {
+        margin: 0rem auto;
+        height: auto;
+        .text {
+          padding: 2em 1em 1em;
+          width: 100%;
+          margin: 0 auto;
+          float: none;
+        }
+        .bg {
+          width: 100%;
+          background-image: url("/themes/custom/sf/img/section4m.jpg");
+        }
+      }
+    }
+  }
+
+  .videos {
+    text-align: center;
+    margin: 0 auto 7rem;
+    padding: 0;
+    @media only screen and (max-width: $bp_tablet_max) {
+      margin: 0 auto 3rem;
+    }
+    @include clearfix;
+
+    .grid {
+      width: 84%;
+      margin: 0 auto;
+      @media only screen and (max-width: $bp_tablet_max) {
+        width: 100%;
+      }
+    }
+
+    .imagine {
+      font-size: 1200%;
+      color: $color-gold;
+      margin: 0 auto;
+      padding: 5rem 0 3rem;
+      @media only screen and (max-width: $bp_tablet_max) {
+        font-size: 700%;
+        padding: 5rem 0 2rem;
+      }
+      @media only screen and (max-width: $bp_mobile_max) {
+        font-size: 400%;
+        padding: 2rem 0 1rem;
+      }
+    }
+
+    .video {
+      margin-bottom: 2rem;
+      padding: 5px;
+      width: 33%;
+      float: left;
+      @media only screen and (max-width: $bp_tablet_max) {
+        width: 50%;
+      }
+      @media only screen and (max-width: $bp_mobile_max) {
+        width: 100%;
+      }
+
+      .video-wrapper {
+         padding: 1px;
+         border: $color-gold solid 1px;
+         position: relative;
+        @include fixed-aspect(.5221 * 100%, 'iframe');
+      }
+
+      iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        margin: 0;
+
+      }
+
+      .description {
+        text-transform: uppercase;
+        color: $color-gold;
+        padding: 1rem;
+        font-size: 132%;
+        text-shadow: 0px 0px 2px black;
+      }
+    }
+  }
+
+  footer {
+    position: relative;
+    margin-top: 2rem;
+    height: 200px;
+    text-align: center;
+//  background: $color-black;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.4) 30%, rgba(0,0,0,.6) 100%);
+    @media only screen and (max-width: $bp_tablet_max) {
+      height: 38vh;
+//    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.4) 30%, rgba(0,0,0,.7) 100%);
+    }
+
+    .links {
+      p {
+        margin: .3rem 0;
+        line-height: 1.3;
+        a {
+          font-size: 110%;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      text-align: right;
+      position: absolute;
+      right: 30px;
+      bottom: .5rem;
+    }
+
+    .aureon-logo {
+      margin: 0 auto;
+      padding: 3rem 0 0;
+      @media only screen and (max-width: $bp_tablet_max) {
+        padding: 2rem 0 0;
+      }
+    }
+    .container {
+      @media only screen and (max-width: $bp_tablet_max) {
+        padding-top: 1vh;
+      }
+    }
+
+    img {
+      margin: 0 auto;
+      display: block;
+      &.aureon {
+        height: 8vh;
+      }
+      &.slogan {
+        height: 2.5vh;
+        margin-top: .5rem;
+      }
+    }
+  }
+}
+
