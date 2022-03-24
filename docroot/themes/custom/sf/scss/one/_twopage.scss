@@ -9,7 +9,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-image: url("/themes/custom/sf/img/earth.jpg");
+    background-image: url("/themes/custom/sf/img/bg_two1.jpeg");
     background-size: cover;
     z-index: 0;
   }
@@ -46,6 +46,7 @@
   header {
     z-index: 1;
     height: 30vh;
+    max-height: 300px;
     @media only screen and (max-width: $bp_tablet_max) {
       height: 50vh;
     }
@@ -287,15 +288,71 @@
 
   .videos {
     text-align: center;
-    margin: 0 auto 7rem;
+    margin: 0 auto 3rem;
     padding: 0;
     @media only screen and (max-width: $bp_tablet_max) {
       margin: 0 auto 3rem;
     }
     @include clearfix;
 
+    .video {
+      margin-bottom: 1rem;
+      padding: 5px;
+      width: 33%;
+      float: left;
+      @media only screen and (max-width: $bp_tablet_max) {
+        width: 50%;
+      }
+      @media only screen and (max-width: $bp_mobile_max) {
+        width: 100%;
+      }
+
+      .video-wrapper {
+        padding: 1px;
+        border: $color-gold solid 1px;
+        position: relative;
+        @include fixed-aspect(.5221 * 100%, 'iframe');
+      }
+
+      iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        margin: 0;
+
+      }
+
+      .description {
+        background-color: rgba(0,0,0,.3);
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: $color-gold;
+        padding: .5rem 1rem;
+        font-size: 132%;
+        text-shadow: 0px 0px 2px black;
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .primary {
+      .primary-video {
+        margin-bottom: 1rem;
+        padding: 5px;
+        width: 100%;
+      }
+    }
+
     .grid {
-      width: 84%;
+      .video {
+
+      }
+//    width: 84%;
       margin: 0 auto;
       @media only screen and (max-width: $bp_tablet_max) {
         width: 100%;
@@ -317,45 +374,6 @@
       }
     }
 
-    .video {
-      margin-bottom: 2rem;
-      padding: 5px;
-      width: 33%;
-      float: left;
-      @media only screen and (max-width: $bp_tablet_max) {
-        width: 50%;
-      }
-      @media only screen and (max-width: $bp_mobile_max) {
-        width: 100%;
-      }
-
-      .video-wrapper {
-         padding: 1px;
-         border: $color-gold solid 1px;
-         position: relative;
-        @include fixed-aspect(.5221 * 100%, 'iframe');
-      }
-
-      iframe {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: calc(100% - 1px);
-        height: calc(100% - 1px);
-        margin: 0;
-
-      }
-
-      .description {
-        text-transform: uppercase;
-        color: $color-gold;
-        padding: 1rem;
-        font-size: 132%;
-        text-shadow: 0px 0px 2px black;
-      }
-    }
   }
 
   footer {

@@ -9,7 +9,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-image: url("/themes/custom/sf/img/earth.jpg");
+    background-image: url("/themes/custom/sf/img/bg_one1.jpeg");
     background-size: cover;
     z-index: 0;
   }
@@ -46,6 +46,7 @@
   header {
     z-index: 1;
     height: 100vh;
+    max-height: 500px;
     @media only screen and (max-width: $bp_tablet_max) {
       height: 50vh;
     }
