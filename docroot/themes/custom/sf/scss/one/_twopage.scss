@@ -9,7 +9,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-image: url("/themes/custom/sf/img/bg_two1.jpeg");
+    background-image: url("/themes/custom/sf/img/bg_two4.jpeg");
     background-size: cover;
     z-index: 0;
   }
@@ -327,14 +327,14 @@
       }
 
       .description {
-        background-color: rgba(0,0,0,.3);
         line-height: 1.2;
         text-transform: uppercase;
         color: $color-gold;
-        padding: .5rem 1rem;
         font-size: 132%;
         text-shadow: 0px 0px 2px black;
         p {
+          background-color: rgba(0,0,0,.3);
+          padding: .5rem 1rem;
           margin: 0;
         }
       }
