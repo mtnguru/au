@@ -24,5 +24,4 @@ config/
 /docroot/sites/default/files
 
 .idea/
-*.css.map
 /docroot/mail
