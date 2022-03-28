@@ -1,0 +1,1 @@
+{"version":3,"file":"../../page/page-news.css","sources":["../stdin"],"sourcesContent":["body.page-node-type-news {\n  .text-formatted {\n    > p {\n      max-width: 820px;\n    }\n  }\n}\n\n\n"],"mappings":"AAAA,AAEM,IAFF,AAAA,oBAAoB,CACtB,eAAe,CACX,CAAC,AAAC,CACF,SAAS,CAAE,KAAM,CAClB","names":[]}
