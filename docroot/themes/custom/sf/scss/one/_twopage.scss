@@ -312,7 +312,7 @@
         padding: 1px;
         border: $color-gold solid 1px;
         position: relative;
-        @include fixed-aspect(.5221 * 100%, 'iframe');
+        @include fixed-aspect(.5273 * 100%, 'iframe');
       }
 
       iframe {
