@@ -73,6 +73,9 @@
     .links {
       position: absolute;
       margin-top: 4vh;
+      .selected {
+        color: lighten($color-gold, 30%);
+      }
       @media only screen and (max-width: $bp-tablet-max) {
         position: relative;
         text-align: center;
