@@ -74,7 +74,7 @@
       position: absolute;
       margin-top: 4vh;
       .selected {
-        color: lighten($color-gold, 40%);
+        color: lighten($color-gold, 25%);
       }
       @media only screen and (max-width: $bp-tablet-max) {
         position: relative;
@@ -330,7 +330,7 @@
         padding: 5rem 0 2rem;
       }
       @media only screen and (max-width: $bp_mobile_max) {
-        font-size: 400%;
+        font-size: 350%;
         padding: 2rem 0 1rem;
       }
     }
@@ -387,7 +387,11 @@
     .morelink {
 //    position: absolute;
 //    left: 30px;
-//    font-size: 110%;
+      font-size: 132%;
+      font-weight: bold;
+      a {
+        color: $color-gold;
+      }
     }
 
     .links {
