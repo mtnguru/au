@@ -70,6 +70,21 @@
       }
     }
 
+    .links {
+      position: absolute;
+      margin-top: 4vh;
+      @media only screen and (max-width: $bp-tablet-max) {
+        position: relative;
+        text-align: center;
+      }
+      font-size: 115%;
+      font-weight: bold;
+      a {
+        color: $color-gold;
+        margin: 0 3px;
+      }
+    }
+
     img {
       display: block;
       margin: 0 auto;
