@@ -74,7 +74,7 @@
       position: absolute;
       margin-top: 4vh;
       .selected {
-        color: lighten($color-gold, 30%);
+        color: lighten($color-gold, 25%);
       }
       @media only screen and (max-width: $bp-tablet-max) {
         position: relative;
