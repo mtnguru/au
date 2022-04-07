@@ -279,5 +279,15 @@ body.url-home1 {
       }
     }
   }
+  .morelink {
+    text-align: center;
+    font-size: 135%;
+    a {
+      color: $color-gold;
+      &:hover {
+        color: lighten($color-gold, 20%);
+      }
+    }
+  }
 }
 
