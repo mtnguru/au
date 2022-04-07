@@ -275,18 +275,19 @@ body.url-home1 {
         color: $color-gold;
         padding: 1rem;
         font-size: 132%;
-        text-shadow: 0px 0px 2px black;
       }
     }
   }
   .morelink {
-    text-align: center;
+//  text-align: center;
     font-size: 135%;
     a {
-      color: $color-gold;
-      &:hover {
-        color: lighten($color-gold, 20%);
-      }
+      margin-top: -2rem;
+      text-shadow: 0px 0px 2px black;
+//    color: $color-gold;
+//    &:hover {
+//      color: lighten($color-gold, 20%);
+//    }
     }
   }
 }
