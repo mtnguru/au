@@ -1,0 +1,115 @@
+
+body.au-contactus {
+  #header-background {
+    background-image: url(/themes/custom/sf/img/bg_contactus.jpg);
+  }
+}
+
+#node-2231 {
+  #crmWebToEntityForm {
+    max-width: 600px;
+    padding: 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+    color: $color-gold;
+    background-color: rgba(0,0,0,.5) !important;
+
+    .zcwf_title {
+      display: none;
+    }
+
+    .zcwf_col_lab {
+      width: 25%;
+      word-break: break-word;
+      padding: 0px 6px 0px;
+      margin-right: 10px;
+      float: left;
+      min-height: 1px;
+    }
+
+    .zcwf_col_fld {
+      input[type=text],
+      textarea {
+        border: 2px solid #ccc !important;
+        resize: vertical;
+        border-radius: 2px;
+        float: left;
+      }
+      input {
+        margin-bottom: 4px;
+        padding: 4px;
+        width: 60%;
+      }
+      textarea {
+        height: 10rem;
+        width: 100%;
+      }
+      float: left;
+      width: 100%;
+      padding: 0px 6px 0px;
+      position: relative;
+      &.checkbox {
+        width: auto;
+        input {
+          margin: 4px 6px 0 0;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    .zcwf_col_fld_slt {
+      width: 60%;
+      border: 1px solid #ccc;
+      background: #fff;
+      border-radius: 4px;
+      font-size: 12px;
+      float: left;
+      resize: vertical;
+    }
+
+    .zcwf_row:after, .zcwf_col_fld:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .zcwf_row {
+      margin: 15px 0px;
+    }
+
+    .formsubmit {
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    input.zcwf_button {
+      font-size: 1rem;
+      background-color: $base-button-color;
+      padding: var(--spacing--small) var(--spacing);
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      max-width: 120px;
+    }
+
+    .clearB:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    @media all and (max-width: 600px) {
+      .zcwf_col_lab, .zcwf_col_fld {
+        width: auto;
+        float: none;
+        &.checkbox {
+          float: left;
+        }
+      }
+      .zcwf_col_help {
+        width: 40%;
+      }
+    }
+  }
+}

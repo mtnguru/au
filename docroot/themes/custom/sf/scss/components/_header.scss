@@ -1,0 +1,73 @@
+main.outer-wrapper {
+
+}
+/////////////////////////////////////////////////////////////////////////////////
+#au-header {
+  position: relative;
+  @media only screen and (max-width: $bp-tablet-max) {
+    margin-bottom: 1rem;
+  }
+
+  header {
+//  height: 100vh;
+//  max-width: $max-width;
+//  margin: 0 auto;
+    @media only screen and (max-width: $bp_tablet_max) {
+//    height: 50vh;
+    }
+
+    .aureon-logo {
+      float: right;
+      margin-right: 2rem;
+    }
+
+    .background {
+      display: none;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-image: url("/themes/custom/sf/img/stars1_bg.png");
+      background-size: cover;
+      background-position: center center;
+      filter: brightness(.7);
+      filter: contrast(2);
+      z-index: -1;
+    }
+
+    .aureon-logo {
+      z-index: 0;
+      position: relative;
+      padding: 2rem 0 2rem 0;
+      width: 30%;
+      @media only screen and (max-width: $bp-desktop-max) {
+        width: 40%;
+      }
+      @media only screen and (max-width: $bp-tablet-max) {
+        padding: 4vh 0 0 0;
+        width: 75%;
+        float: none;
+        margin: 0 auto;
+        padding-right: 0;
+      }
+      @media only screen and (max-width: $bp-mobile-max) {
+        width: 85%;
+      }
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      &.aureon {
+
+      }
+
+      &.slogan {
+        margin: 0 auto;
+//      margin-top: 1rem;
+      }
+    }
+
+  }
+
+  // header
+}

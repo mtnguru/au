@@ -38,7 +38,13 @@
       {% set classes = [] %}
       <ul class="submenu">
     {% endif %}
+    {% set first = true %}
     {% for item in items %}
+      {% if first %}
+        {% set first = false %}
+      {% else %}
+        <span> | </span>
+      {% endif %}
       {% if item.below %}
         {% if item.no_link %}
           <li{{ item.attributes.addClass(classes | merge(['more', 'js-navigation-more', 'no-link'])) }}>
