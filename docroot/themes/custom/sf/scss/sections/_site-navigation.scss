@@ -19,12 +19,20 @@
   $base-border-radius: $base-border-radius !default;
   $dark-gray: #333 !default;
   $navigation-padding: 1em;
-  $navigation-color: $color-light-blue;
-  $navigation-color-hover: lighten($color-light-blue, 20%);
+  $navigation-color: $color-gold;
+  $navigation-color-hover: lighten($color-gold, 20%);
+
   $navigation-submenu-padding: 20px;
   $navigation-submenu-width: 15em;
 
+  max-width: 1280px;
+  margin: 0 auto;
+
   position: relative;
+
+  #block-sf-primary-local-tasks {
+    margin: 0 2rem;
+  }
 
   .az-top {
     width: 100%;
@@ -57,11 +65,13 @@
 
       @include media(max-width $bp-tablet-max) {
         width: 100%;
-        text-align: right;
+//      text-align: left;
       }
       @include media($bp-desktop) {
-        right: 2rem;
-        text-align: left;
+
+//      right: 2rem;
+//      bottom: 10px;
+//      text-align: left;
       }
 
       .user-menu {
@@ -70,9 +80,9 @@
         left: 30px;
 
         @include media($bp-desktop) {
-          right: 15px;
-          left: auto;
-          top: -100px;
+          right: auto;
+          left: 2rem;
+          bottom: 10px;
         }
 
         .links {
@@ -110,8 +120,8 @@
 
           .popup {
             position: absolute;
-            top: -300px;
-            left: 0px;
+            top: -500px;
+            left: -.5rem;
             right: -10px;
             width: 230px;
             background-color: $color-dark-purple;
@@ -130,31 +140,32 @@
               color: $color-gold;
             }
             @include media($bp-desktop) {
-              left: auto;
-              right: -10px;
+//            left: 0;
             }
           }
 
           &:hover {
             .popup {
               bottom: auto;
-              top: -20px;
+              top: -2.5rem;
               text-align: left;
               @include media ($bp-desktop) {
                 text-align: left;
-                right: -10px;
-                left: auto;
+//              left: 0;
               }
             }
           }
 
           &.logged-in {
-            padding-top: 6px;
+            padding-top: 2.8rem;
+            @include media ($bp-desktop) {
+              padding-top: 5.2rem;
+            }
 
             img {
               height: 44px;
               border-radius: 1px;
-              border: 2px solid $color-light-blue;
+              border: 2px solid $color-gold;
               background-color: $color-dark-blue;
             }
 
@@ -163,7 +174,7 @@
               display: block;
               border-radius: 2px;
               background-color: $color-dark-blue;
-              border: 1px solid $color-light-blue;
+              border: 1px solid $color-gold;
               padding: 6px 8px;
               margin-top: 2px;
               color: $color-white;
@@ -171,6 +182,15 @@
           }
         }
       }
+    }
+  }
+
+
+  #block-mainnavigation {
+    @include media ($bp-desktop) {
+      position: absolute;
+      top: 3vh;
+      left: 0px;
     }
   }
 
@@ -183,7 +203,7 @@
   // Mobile view
 
   .navigation-menu-button {
-    color: $color-light-blue;
+    color: $navigation-color;
     display: block;
     line-height: $navigation-height;
     padding: 0 30px;
@@ -201,7 +221,7 @@
 
     &:focus,
     &:hover {
-      color: $color-gold;
+      color: $navigation-color-hover;
       text-decoration: none;
     }
 
@@ -212,17 +232,26 @@
 
   ul.navigation-menu {
     clear: both;
-    font-weight: normal;
+    font-weight: bold;
     display: none;
-    list-style: none;
+    color: $navigation-color;
     width: 100%;
     margin: 0 auto;
+    padding: 0;
+    text-transform: uppercase;
+    list-style: none;
     list-style-type: none;
 
     @include media(max-width $bp-tablet-max) {
-//    background: linear-gradient(270deg, $color-dark-blue, $color-blue);
+      background: linear-gradient(270deg, $color-dark-blue, $color-blue);
       margin-top: -50px;
-      padding: 0;
+      padding: 1.5rem 0 1rem;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 5;
+      span {
+        display: none;
+      }
     }
 
     @include media($bp-desktop) {
@@ -234,7 +263,6 @@
       > li:last-child {
         > ul {
           margin-left: -85px;
-
           > li a {
             width: 208px;
           }
@@ -242,9 +270,13 @@
       }
     }
 
+    &.show {
+      display: block;
+    }
+
     span,
     a {
-      line-height: 1.6;
+      line-height: 2.2;
       font-size: 140%;
       text-decoration: none;
       color: $navigation-color;
@@ -254,17 +286,14 @@
         color: $navigation-color-hover;
       }
       min-width: 200px;
-    }
-
-    &.show {
-      display: block;
+      &.is-active {
+        color: lighten($navigation-color,25%);
+      }
     }
 
     @include media ($bp-desktop) {
       display: flex;
-      float: right;
-      margin-right: 2rem;
-      width: auto;
+      margin-left: 1.5rem;
       span,
       a {
         min-width: auto;
@@ -316,10 +345,8 @@
         text-align: left;
         > span,
         > a {
-          padding: 5px 15px;
+          padding: 0px 10px;
           vertical-align: middle;
-//        line-height: 1.3;
-          font-size: 95%;
         }
         svg {
           margin-left: -12px;
@@ -436,7 +463,6 @@
       a {
         display: inline-block;
         width: 100%;
-        line-height: 1.4;
         padding: 3px 15px;
 
 //      @include media($bp-desktop) {
