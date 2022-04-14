@@ -209,6 +209,24 @@ body.url-home1 {
           background-image: url("/themes/custom/sf/img/section4m.jpg");
         }
       }
+      .desktop {
+        @include media(max-width $bp_tablet_max) {
+          display: none;
+        }
+      }
+    }
+
+    &.section5 {
+      font-size: 140%;
+      line-height: 1.2;
+      .text {
+      }
+      .mobile {
+        padding: .3em 1em;
+        @include media( $bp_desktop) {
+          display: none;
+        }
+      }
     }
   }
 
