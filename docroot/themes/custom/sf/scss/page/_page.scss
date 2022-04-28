@@ -24,20 +24,6 @@ body.view-investor-documents-personal-page-1 {
   }
 }
 
-body {
-  #header-background {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-//  background-image: url(/themes/custom/sf/img/bg_one1.jpeg);
-    background-size: cover;
-    z-index: -1;
-    &.wide {
-      background-position-y: 42%;
-    }
-  }
-}
-
 footer {
   position: relative;
   height: 200px;
