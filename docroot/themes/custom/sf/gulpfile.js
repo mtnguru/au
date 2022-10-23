@@ -30,7 +30,7 @@ loadConfig();
  * This task generates CSS from all SCSS files and compresses them down.
  */
 gulp.task('sass', function () {
-  return gulp.src('./scss/**/*.scss')
+  return gulp.src('./scss/**/*')
     .pipe(sassGlob())
     .pipe(sourcemaps.init())
     .pipe(sass({
