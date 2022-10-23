@@ -13,6 +13,7 @@
         "ckeditor/link": "*",
         "codemirror/codemirror": "*",
         "cweagans/composer-patches": "^1.6.0",
+        "drupal-composer/drupal-scaffold": "^2.3",
         "drupal/address": "^1.7",
         "drupal/admin_toolbar": "^3.0",
         "drupal/adminimal_theme": "^1.5",
@@ -85,7 +86,8 @@
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
-            "oomphinc/composer-installers-extender": true
+            "oomphinc/composer-installers-extender": true,
+            "drupal-composer/drupal-scaffold": true
         }
     },
     "extra": {
