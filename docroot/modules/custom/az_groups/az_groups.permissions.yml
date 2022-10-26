@@ -1,3 +1,0 @@
-az groups view hidden:
-  title: 'AZ Groups View Hidden'
-  description: 'View Hidden groups and their content'

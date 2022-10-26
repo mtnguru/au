@@ -1,5 +1,0 @@
-name: AZ Groups
-type: module
-description: Module to enhance Groups
-core: 8.x
-package: AZ

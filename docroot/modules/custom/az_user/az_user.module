@@ -15,7 +15,7 @@ use Drupal\node\Entity\Node;
  */
 function az_user_form_user_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   if (!\Drupal::currentUser()->hasPermission('administer account settings')) {
-    $form['field_address']['#access'] = false;
+//  $form['field_address']['#access'] = false;
     $form['field_phone']['#access'] = false;
     $form['field_private_notes']['#access'] = false;
     $form['field_biography']['#access'] = false;

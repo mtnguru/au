@@ -1,6 +1,0 @@
-az-more-slider:
-  js:
-    js/moreSlider.js: {}
-  css:
-    base:
-      css/moreSlider.css: {}

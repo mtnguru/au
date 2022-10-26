@@ -19,6 +19,7 @@ class AzContact {
     $query = \Drupal::database()->select('contact_message', 'cm');
     $query->fields('cm', ['id', 'name', 'mail', 'subject', 'message', 'created']);
 
+    /*
     $query->leftJoin('contact_message__field_address', 'cmfa', 'cm.id = cmfa.entity_id');
     $query->addField('cmfa', 'field_address_address_line1', 'line1');
     $query->addField('cmfa', 'field_address_address_line2', 'line2');
@@ -26,6 +27,7 @@ class AzContact {
     $query->addField('cmfa', 'field_address_administrative_area', 'area');
     $query->addField('cmfa', 'field_address_postal_code', 'code');
     $query->addField('cmfa', 'field_address_country_code', 'country');
+    */
 
     $query->leftJoin('contact_message__field_phone', 'cmfp', 'cm.id = cmfp.entity_id');
     $query->addField('cmfp', 'field_phone_value', 'phone');
@@ -78,8 +80,8 @@ class AzContact {
 
 //  $interestv = $cm->field_interest->getValue();
 //  $interest = $cm->field_interest->getString();
-    $addressv = $cm->field_address->getValue();
-    $address = $cm->field_address->getString();
+//  $addressv = $cm->field_address->getValue();
+//  $address = $cm->field_address->getString();
     $node = Node::create([
       'type'           => 'contact',
       'status'         => 1,
@@ -90,7 +92,7 @@ class AzContact {
       'field_source'   => $source,
       'field_first_contact_date' => date('Y-m-d', $cm->created->value),
       'field_last_contact_date'  => date('Y-m-d', $cm->created->value),
-      'field_address'  => $cm->field_address->getValue(),
+//    'field_address'  => $cm->field_address->getValue(),
     ]);
 
     $node->save();
@@ -127,9 +129,9 @@ class AzContact {
     if (!$cm->field_phone->isEmpty()) {
       $contact->field_phone->setValue($cm->field_phone->value);
     }
-    if (!$cm->field_address->isEmpty()) {
-      $contact->field_address->setValue($cm->field_address->getValue());
-    }
+//  if (!$cm->field_address->isEmpty()) {
+//    $contact->field_address->setValue($cm->field_address->getValue());
+//  }
 //  if (!$cm->field_interest->isEmpty()) {
 //    $contact->field_interest->setValue($cm->field_interest->getValue());
 //  }
