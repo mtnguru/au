@@ -27,9 +27,6 @@
 
 
     .aureon-logo {
-//    float: left;
-      float: right;
-      margin-right: 2rem;
     }
 
     .background {
@@ -46,6 +43,8 @@
     }
 
     .aureon-logo {
+      float: right;
+      margin-right: 2rem;
       z-index: 0;
       position: relative;
       padding: 2rem 0 2rem 0;
@@ -62,6 +61,18 @@
       }
       @media only screen and (max-width: $bp-mobile-max) {
         width: 85%;
+      }
+      .logo-blue {
+        display: none;
+      }
+      &:hover {
+        .logo {
+          display: none;
+        }
+        .logo-blue {
+          display: block;
+        }
+
       }
     }
 

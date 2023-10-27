@@ -1,16 +1,17 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
-var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var shell = require('gulp-shell');
-var notify = require('gulp-notify');
+//var notify = require('gulp-notify');
 var browserSync = require('browser-sync').create();
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var fs = require("fs");
 var runSequence = require('run-sequence');
-var config = require("./example.config");
+var config = require("./config");
+var sass = require('gulp-sass')(require('sass'));
 var sassGlob = require('gulp-sass-glob');
+var sassBulkImport = require('gulp-sass-bulk-import');
 
 /**
  * If config.js exists, load that config for overriding certain values below.
@@ -30,8 +31,9 @@ loadConfig();
  * This task generates CSS from all SCSS files and compresses them down.
  */
 gulp.task('sass', function () {
-  return gulp.src('./scss/**/*')
+  return gulp.src('./scss/**/*.scss')
     .pipe(sassGlob())
+//  .pipe(sassBulkImport())
     .pipe(sourcemaps.init())
     .pipe(sass({
       noCache: true,
@@ -45,11 +47,11 @@ gulp.task('sass', function () {
     })
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./css'))
-    .pipe(notify({
-      title: "SASS Compiled",
-      message: "All SASS files have been recompiled to CSS.",
-      onLast: true
-    }));
+//  .pipe(notify({
+//    title: "SASS Compiled",
+//    message: "All SASS files have been recompiled to CSS.",
+//    onLast: true
+//  }));
 });
 
 /**

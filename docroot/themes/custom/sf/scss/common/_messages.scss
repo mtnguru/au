@@ -1,12 +1,14 @@
 $base-spacing: 1.5em !default;
 $message-border-radius: 5px;
 
+@use "sass:math";
+
 @mixin flash($color) {
   background-color: $color;
   color: darken($color, 60%);
   display: block;
-  margin-bottom: $base-spacing / 2;
-  padding: $base-spacing / 2 $base-spacing / 2 $base-spacing / 2 50px;
+  margin-bottom: math.div($base-spacing, 2);
+  padding: math.div($base-spacing, 2) math.div($base-spacing, 2) math.div($base-spacing, 2) 50px;
   border-radius: $message-border-radius;
 
   a {

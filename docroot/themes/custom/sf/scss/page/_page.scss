@@ -69,15 +69,22 @@ footer {
     }
   }
 
-  img {
-    margin: 0 auto;
-    display: block;
-    &.aureon {
-      height: 8vh;
+  .aureon-logo {
+    img {
+      margin: 0 auto;
+      display: block;
+      height: 15vh;
     }
-    &.slogan {
-      height: 2.5vh;
-      margin-top: .5rem;
+    .logo-blue {
+      display: none;
+    }
+    &:hover {
+      .logo {
+        display: none;
+      }
+      .logo-blue {
+        display: block;
+      }
     }
   }
 }
